@@ -9,3 +9,6 @@ let index = 5
 //Eksi değer almaz!!
 // console.log(at.charAt(index))
 
+//charCodeAt()
+//Karakter kodunu dönderir
+//console.log(at.charCodeAt(index))
