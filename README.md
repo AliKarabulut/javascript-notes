@@ -30,14 +30,35 @@ pangram.at(-5)
 ### .charAt()
 0+ değer alır verilen değer string uzunluğundan fazla ise boş string dönderir
 
-"`
-const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
-`"
----
-### .charCodeAt()
+değer verilmezse varsayılan olarak `0` indeksini dönderir
 
 "`
 const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
+
+pangram.charat(5)
+//Çıktı: a
+
+pangram.charAt()
+//Çıktı: P
+
+pangram.charat(-5)
+//Çıktı: " "
+`"
+---
+### .charCodeAt()
+Ondalık tabanda karakter kodunu dönderir 
+
+`Alt + karakter kodu` ile değeri kullanarak çıktısını alabilirsiniz 
+"`
+const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
+
+pangram.charCodeAt(8)
+//Çıktı: 107
+
+pangram.charCodeAt(-8)
+//Çıktı: NAN
+
+
 `"
 
 ---
