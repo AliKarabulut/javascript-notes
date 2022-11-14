@@ -17,13 +17,14 @@ Verilen değer bulunamazsa `undefinied` dönderir
 
 ```
 const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
+
 pangram.at(5)
 
-`Çıktı:` a
+**Çıktı:** a
 
 pangram.at(-5)
 
-`Çıktı:` e
+**Çıktı:** e
 ```
 
 
