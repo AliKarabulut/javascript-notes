@@ -2,12 +2,6 @@
 Bu rehber hatırlatma amacı taşımaktadır. 
 ---
 ## İçindekiler
-- String Metotları
-    - at()
-    - charAt()
-    - charCodeAt()
-    - concat()
-
 * [String Metotları](#String-Metotları)
   - [at()](#at())
   - [charAt()](#charAt())
