@@ -65,11 +65,11 @@ pangram.charCodeAt(-8)
 ### .concat()
 Bağımsız stringleri birleştirir ve yeni bir string dönderir
 ```
-const string1 = 'Selam'
-const string2 = 'Bebek'
+const string1 = 'Selam '
+const string2 = 'Bebek '
 const list = [' Naber','?']
 
-let sonuc = string1.concat(" ",string2," ",":)",...list) 
+let sonuc = string1.concat(string2,":)",...list) 
 //Çıktı: Selam Bebek :) Naber?
 
 ```
