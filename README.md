@@ -67,9 +67,9 @@ Bağımsız stringleri birleştirir ve yeni bir string dönderir
 ```
 const string1 = 'Selam'
 const string2 = 'Bebek'
-const list = ['Merhaba', ' ', 'efendim', '!']
+const list = [' Naber','?']
 
-let sonuc = string1.concat(" ",string2," ",":)") 
-//Çıktı: Selam Bebek :)
+let sonuc = string1.concat(" ",string2," ",":)",...list) 
+//Çıktı: Selam Bebek :) Naber?
 
 ```
