@@ -11,7 +11,7 @@ Bu rehber hatırlatma amacı taşımaktadır.
 
 ---
 ## String Metotları
----
+
 
 ### .at()
 Bir tam sayı değeri alır ve stringte karşılık gelen değeri dönderir.
