@@ -3,11 +3,11 @@ Bu rehber hatırlatma amacı taşımaktadır.
 ---
 ## İçindekiler
 * [String Metotları](#String-Metotları)
-  - [at()](#at())
-  - [charAt()](#charAt())
-  - [charCodeAt()](#charCodeAt())
-  - [concat()](#concat())
-  - [endswith()](#endswith())
+  - [at()](#.at())
+  - [charAt()](#.charAt())
+  - [charCodeAt()](#.charCodeAt())
+  - [concat()](#.concat())
+  - [endswith()](#.endswith())
 
 ---
 ## String Metotları
