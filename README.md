@@ -8,6 +8,7 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [charCodeAt()](#charCodeAt)
   - [concat()](#concat)
   - [endswith()](#endswith)
+  - [includes()](#includes)
 
 ---
 ## String Metotları
@@ -85,4 +86,17 @@ pangram.endswith('di.')
 
 pangram.endswith('vendi.', 44)
 //Çıktı: true
+```
+### .includes()
+Stringin içinde istenen değerin var olup olmadığına bakar `True/False` dönderir.
+Büyük-küçük harf duyarlıdır 
+
+```
+const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
+
+pangram.includes('ndi.')
+//Çıktı: true
+
+pangram.endswith('Güvendi.')
+//Çıktı: false
 ```
