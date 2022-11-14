@@ -11,9 +11,9 @@ Bu rehber hatırlatma amacı taşımaktadır.
 ---
 
 ### .at()
-Bir tam sayı değeri alır ve stringte karşılık gelen değeri dönderir
+Bir tam sayı değeri alır ve stringte karşılık gelen değeri dönderir.
 
-Verilen değer bulunamazsa `undefinied` dönderir
+Verilen değer bulunamazsa `undefinied` dönderir.
 
 ```
 const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
@@ -28,9 +28,9 @@ pangram.at(-5)
 
 ---
 ### .charAt()
-0+ değer alır verilen değer string uzunluğundan fazla ise boş string dönderir
+0+ değer alır verilen değer string uzunluğundan fazla ise boş string dönderir.
 
-değer verilmezse varsayılan olarak `0` indeksini dönderir
+Değer verilmezse varsayılan olarak `0` indeksini dönderir.
 
 ```
 const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
@@ -48,7 +48,7 @@ pangram.charat(-5)
 ### .charCodeAt()
 Ondalık tabanda karakter kodunu dönderir 
 
-`Alt + karakter kodu` ile değeri kullanarak çıktısını alabilirsiniz 
+`Alt + karakter kodu` ile değeri kullanarak çıktısını alabilirsiniz.
 ```
 const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
 
@@ -63,7 +63,13 @@ pangram.charCodeAt(-8)
 
 ---
 ### .concat()
+Bağımsız stringleri birleştirir ve yeni bir string dönderir
+```
+const string1 = 'Selam'
+const string2 = 'Bebek'
+const list = ['Merhaba', ' ', 'efendim', '!']
 
-"`
-const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
-`"
+let sonuc = string1.concat(" ",string2," ",":)") 
+//Çıktı: Selam Bebek :)
+
+```
