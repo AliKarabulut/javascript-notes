@@ -15,7 +15,7 @@ Bir tam sayı değeri alır ve stringte karşılık gelen değeri dönderir
 
 Verilen değer bulunamazsa `undefinied` dönderir
 
-"`
+“`
 
 const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
 pangram.at(5)
@@ -25,7 +25,7 @@ pangram.at(5)
 pangram.at(-5)
 
 `Çıktı:` e
-"`
+“`
 
 ---
 ### .charAt()
