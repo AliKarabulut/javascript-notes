@@ -8,6 +8,15 @@ Bu rehber hatırlatma amacı taşımaktadır.
     - charCodeAt()
     - concat()
 
+* [String Metotları](#String-Metotları)
+  - [at()](#at())
+  - [charAt()](#charAt())
+  - [charCodeAt()](#charCodeAt())
+  - [concat()](#concat())
+  - [endswith()](#endswith())
+
+---
+## String Metotları
 ---
 
 ### .at()
@@ -24,8 +33,6 @@ pangram.at(5)
 pangram.at(-5)
 //Çıktı: e
 ```
-
-
 ---
 ### .charAt()
 0+ değer alır verilen değer string uzunluğundan fazla ise boş string dönderir.
@@ -57,8 +64,6 @@ pangram.charCodeAt(8)
 
 pangram.charCodeAt(-8)
 //Çıktı: NAN
-
-
 ```
 
 ---
@@ -71,7 +76,6 @@ const list = [' Naber','?']
 
 let sonuc = string1.concat(string2,":)",...list) 
 //Çıktı: Selam Bebek :) Naber?
-
 ```
 
 ---
@@ -87,6 +91,4 @@ pangram.endswith('di.')
 
 pangram.endswith('vendi.', 44)
 //Çıktı: true
-
-
 ```
