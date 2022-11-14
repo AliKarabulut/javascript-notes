@@ -1,3 +1,9 @@
-javascript methotları için hazırlayacağım dökümantasyonum
+# Javascript Methot Rehberi
+---
+- String Metotları
+    at()
+    charAt()
+    charCodeAt()
+    Concat()
 
--String Metotları-
+
