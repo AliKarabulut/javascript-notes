@@ -32,7 +32,7 @@ pangram.at(-5)
 
 değer verilmezse varsayılan olarak `0` indeksini dönderir
 
-"`
+```
 const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
 
 pangram.charat(5)
@@ -43,13 +43,13 @@ pangram.charAt()
 
 pangram.charat(-5)
 //Çıktı: " "
-`"
+```
 ---
 ### .charCodeAt()
 Ondalık tabanda karakter kodunu dönderir 
 
 `Alt + karakter kodu` ile değeri kullanarak çıktısını alabilirsiniz 
-"`
+```
 const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
 
 pangram.charCodeAt(8)
@@ -59,7 +59,7 @@ pangram.charCodeAt(-8)
 //Çıktı: NAN
 
 
-`"
+```
 
 ---
 ### .concat()
