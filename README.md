@@ -1,22 +1,19 @@
 # Javascript Methot Rehberi
-
-## Bu rehber hatırlatma amacı taşımaktadır.
-
+Bu rehber hatırlatma amacı taşımaktadır. 
+---
 ## İçindekiler
-
-- [String Metotları](#String-Metotları)
-  - [at()](<#.at()>)
-  - [charAt()](<#.charAt()>)
-  - [charCodeAt()](<#.charCodeAt()>)
-  - [concat()](<#.concat()>)
-  - [endswith()](<#.endswith()>)
+* [String Metotları](#String-Metotları)
+  - [at()](#at())
+  - [charAt()](#charAt())
+  - [charCodeAt()](#charCodeAt())
+  - [concat()](#concat())
+  - [endswith()](#endswith())
 
 ---
-
 ## String Metotları
 
-### .at()
 
+### .at()
 Bir tam sayı değeri alır ve stringte karşılık gelen değeri dönderir.
 
 Verilen değer bulunamazsa `undefinied` dönderir.
@@ -30,11 +27,8 @@ pangram.at(5)
 pangram.at(-5)
 //Çıktı: e
 ```
-
 ---
-
 ### .charAt()
-
 0+ değer alır verilen değer string uzunluğundan fazla ise boş string dönderir.
 
 Değer verilmezse varsayılan olarak `0` indeksini dönderir.
@@ -51,15 +45,11 @@ pangram.charAt()
 pangram.charat(-5)
 //Çıktı: " "
 ```
-
 ---
-
 ### .charCodeAt()
-
-Ondalık tabanda karakter kodunu dönderir
+Ondalık tabanda karakter kodunu dönderir 
 
 `Alt + karakter kodu` ile değeri kullanarak çıktısını alabilirsiniz.
-
 ```
 const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
 
@@ -71,28 +61,22 @@ pangram.charCodeAt(-8)
 ```
 
 ---
-
 ### .concat()
-
 Bağımsız stringleri birleştirir ve yeni bir string dönderir
-
 ```
 const string1 = 'Selam '
 const string2 = 'Bebek '
 const list = [' Naber','?']
 
-let sonuc = string1.concat(string2,":)",...list)
+let sonuc = string1.concat(string2,":)",...list) 
 //Çıktı: Selam Bebek :) Naber?
 ```
 
 ---
-
 ### .endswith()
-
 Stringin istenen kelime ya da karakterle bitip bitmediğini kontrol eder `True/False` dönderir.
 
 İkinci argüman olarak index değeri alır istenen bitiş verilen indekse karşılık geliyorsa `True` dönderir
-
 ```
 const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
 
