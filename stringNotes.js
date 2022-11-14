@@ -12,3 +12,5 @@ let index = 5
 //charCodeAt()
 //Karakter kodunu dönderir
 //console.log(at.charCodeAt(index))
+
+//Concat()
