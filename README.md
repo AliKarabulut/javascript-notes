@@ -16,7 +16,7 @@ Bir tam sayı değeri alır ve stringte karşılık gelen değeri dönderir.
 Verilen değer bulunamazsa `undefinied` dönderir.
 
 ```
-const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
+const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
 
 pangram.at(5)
 //Çıktı: a
@@ -33,7 +33,7 @@ pangram.at(-5)
 Değer verilmezse varsayılan olarak `0` indeksini dönderir.
 
 ```
-const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
+const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
 
 pangram.charat(5)
 //Çıktı: a
@@ -50,7 +50,7 @@ Ondalık tabanda karakter kodunu dönderir
 
 `Alt + karakter kodu` ile değeri kullanarak çıktısını alabilirsiniz.
 ```
-const pangram = Pijamalı hasta yağız şoföre çabucak güvendi.
+const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
 
 pangram.charCodeAt(8)
 //Çıktı: 107
@@ -71,5 +71,22 @@ const list = [' Naber','?']
 
 let sonuc = string1.concat(string2,":)",...list) 
 //Çıktı: Selam Bebek :) Naber?
+
+```
+
+---
+### .endswith()
+Stringin istenen kelime ya da karakterle bitip bitmediğini kontrol eder `True/False` dönderir.
+
+İkinci argüman olarak index değeri alır istenen bitiş verilen indekse karşılık geliyorsa `True` dönderir
+```
+const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
+
+pangram.endswith('di.')
+//Çıktı: true
+
+pangram.endswith('vendi.', 44)
+//Çıktı: true
+
 
 ```
