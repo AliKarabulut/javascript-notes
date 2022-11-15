@@ -9,7 +9,8 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [concat()](#concat)
   - [endswith()](#endswith)
   - [includes()](#includes)
-
+  - [indexOf()](#indexOf)
+  - [lastIndexOf()](#lastIndexOf)
 ---
 ## String Metotları
 
@@ -104,7 +105,9 @@ pangram.includes('Güvendi.')
 ```
 ---
 ### .indexOf()
-İki argüman alır ilk argüman istenen değer iken ikinci argüman kaçınca indeksten itibaren bakılması istendiğidir.
+Stringi 0. indexten itibaren tarar
+
+İki argüman alır ilk argüman istenen değer iken ikinci argüman kaçıncı indeksten itibaren bakılması istendiğidir.
 
 İstenen değer bulunamazsa `-1` dönderir
 
@@ -121,5 +124,29 @@ pangram.indexOf('Hasta')
 
 pangram.indexOf('Pija',20)
 //Çıktı: 45
+```
+---
+### .lastIndexOf(value,number(optional))
+Stringi sondan tarayarak istenen değeri arar
+
+İki argüman alır ilk argüman istenen değer iken ikinci argüman kaçıncı indeksten itibaren geriye bakılması istendiğidir.
+
+İstenen değer bulunamazsa `-1` dönderir
+
+ikinci argüman <0 ise `0` indeksine bakar
+
+Boş `''` değeri verilirse `stringin uzunluğunu` dönderir
+
+```
+const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi. Pijamalı"
+
+pangram.lastIndexOf('Pija')
+//Çıktı: 45
+
+pangram.lastIndexOf('Pija',5)
+//Çıktı: 0
+
+pangram.lastIndexOf('')
+//Çıktı: 53
 ```
 ---
