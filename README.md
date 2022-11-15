@@ -87,8 +87,10 @@ pangram.endswith('di.')
 pangram.endswith('vendi.', 44)
 //Çıktı: true
 ```
+---
 ### .includes()
 Stringin içinde istenen değerin var olup olmadığına bakar `True/False` dönderir.
+
 Büyük-küçük harf duyarlıdır 
 
 ```
@@ -97,6 +99,27 @@ const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
 pangram.includes('ndi.')
 //Çıktı: true
 
-pangram.endswith('Güvendi.')
+pangram.includes('Güvendi.')
 //Çıktı: false
 ```
+---
+### .indexOf()
+İki argüman alır ilk argüman istenen değer iken ikinci argüman kaçınca indeksten itibaren bakılması istendiğidir.
+
+İstenen değer bulunamazsa `-1` dönderir
+
+ikinci argüman stringin uzunluğundan fazla ise metot arama yapmadan `-1` dönderir
+
+```
+const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi. Pijamalı"
+
+pangram.indexOf('asta')
+//Çıktı: 10
+
+pangram.indexOf('Hasta')
+//Çıktı: -1
+
+pangram.indexOf('Pija',20)
+//Çıktı: 45
+```
+---
