@@ -11,6 +11,7 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [includes()](#includes)
   - [indexOf()](#indexOf)
   - [lastIndexOf()](#lastIndexOf)
+  - [length](#length)
 ---
 ## String Metotları
 
@@ -126,7 +127,7 @@ pangram.indexOf('Pija',20)
 //Çıktı: 45
 ```
 ---
-### .lastIndexOf(value,number(optional))
+### .lastIndexOf()
 Stringi sondan tarayarak istenen değeri arar
 
 İki argüman alır ilk argüman istenen değer iken ikinci argüman kaçıncı indeksten itibaren geriye bakılması istendiğidir.
@@ -148,5 +149,21 @@ pangram.lastIndexOf('Pija',5)
 
 pangram.lastIndexOf('')
 //Çıktı: 53
+```
+---
+### .length
+Stringin uzunluğunu dönderir
+
+Boş string için uzunluk `0`'dır
+
+```
+const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
+const empty = ""
+
+pangram.length
+//Çıktı: 44
+
+empty.length
+//Çıktı: 0
 ```
 ---
