@@ -14,6 +14,8 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [length](#length)
   - [localeCompare()](#localeCompare)
   - [match()](#match)
+  - [matchAll()](#matchAll)
+  - [normalize()](#normalize)
 ---
 ## String Metotları
 
@@ -202,15 +204,28 @@ let data = dizis.sort((a,b) =>{
 Verilen regex için ifadeyi tarar ve eşleşmelerin çıktısını verir
 
 ```
-const pangram = "Pijamalı hasta yağız şoföre çabucak Güvendi."
+const str = "Pijamalı hasta yağız şoföre çabucak Güvendi."
 const regex = /[A-Z]/g;
 
 pangram.match(regex)
 //Çıktı: ["P","G"]
 ```
 ---
+### .matchAll()
+Verilen regex için ifadeyi tarar indeksleri ve gruplarıyla birlikte eşleşmelerin çıktısını verir
+
+```
+const str = 'Pijamalı hasta yağız şoföre çabucak hastalomanya güvendi.'
+const regex = /ha[a-z]*/g
+
+const matches = [...str.matchAll(regexp)]
+//Çıktı: 
+['hasta', index: 9, input: 'Pijam...', groups: undefined]
+['hastalomanya', index: 36, input: 'Pijam...', groups: undefined]
+```
+---
 ### .normalize()
-Her ne kadar ekranda görünen string ifadeler tıpa tıp aynı olsa da bazen birden çok kod noktası ya da  kod noktası sırası aynı karakteri verebilir. Peki burada şair ne anlatmak istiyor? `\u00F1 ve \u006E\u0303` `ñ` çıktısını verir bizler için bu değer aynı olsa da makineler için değil malesef.
+Her ne kadar ekranda görünen string ifadeler tıpa tıp aynı olsa da bazen birden çok kod noktası ya da  kod noktası sırası aynı karakteri verebilir. Peki burada şair ne anlatmak istiyor? `\u00F1 ve \u006E\u0303` = `ñ` çıktısını verir bizler için bu değer aynı olsa da makineler için değil malesef.
 
 Biz Latin alfabeciler için ne alaka desekte aksanlı karakter kullanılan diller için bir sorundur ve hangi değerin verileceği klavyeden klavyeye değişebilir. Örneğin:
 
