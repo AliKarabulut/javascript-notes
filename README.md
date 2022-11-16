@@ -209,3 +209,35 @@ pangram.match(regex)
 //Çıktı: ["P","G"]
 ```
 ---
+### .normalize()
+Her ne kadar ekranda görünen string ifadeler tıpa tıp aynı olsa da bazen birden çok kod noktası ya da  kod noktası sırası aynı karakteri verebilir. Peki burada şair ne anlatmak istiyor? `\u00F1 ve \u006E\u0303` `ñ` çıktısını verir bizler için bu değer aynı olsa da makineler için değil malesef.
+
+Biz Latin alfabeciler için ne alaka desekte aksanlı karakter kullanılan diller için bir sorundur ve hangi değerin verileceği klavyeden klavyeye değişebilir. Örneğin:
+
+let s1 = 'sabiá'
+let s2 = 'sabiá'
+
+s1 == s2 yi sorguladığımızda karşımıza çıkacak olan koca bir false'dir. Bu iki değerin uzunlukları bile birbirinden Farklıdır :)
+
+Ve eğer ki string ifadelerin aynı olup olmadığına bakıp aynı olanları çıkardığımız bir durumda, ya da websitemizdeki isimlerin bir listesini almak istediğimizde aynı değerlerin birden çok kez yazılmış olduğunu görebiliriz.
+
+```
+let s1 = 'sabiá
+let s2 = 'sabiá
+
+s1 === s2
+//Çıktı: false
+
+s1.length === s2.length
+//Çıktı: false
+
+const nors1 = s1.normalize('NFC')
+const nors2 = s2.normalize('NFC')
+
+nors1 === nors2
+//Çıktı: true
+
+nors1.length === nors2.length
+//Çıktı: true
+```
+---
