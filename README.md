@@ -167,3 +167,32 @@ empty.length
 //Çıktı: 0
 ```
 ---
+### .localeCompare()
+Javascript ASCII karakterleri dışındaki karakterleri sıralamaz ve sona atar. Bunun önüne geçmek için kullanılır
+
+Karşılaştırmada önce sonra ve eşit olma durumuna göre sayı dönderir
+
+Küçük harfler büyüklerden önce gelir
+
+```
+const string1 = 'a'
+const string2 = 'A'
+const string3 = 'ç'
+
+
+string1.localeCompare(string2)
+//Çıktı: -1
+
+string3.localeCompare(string2)
+//Çıktı: 1
+
+`Dizi sıralamasına örnek`
+```
+let dizi = ["a","A","b","c","Ç","ç","B","d","D"]
+let data = dizis.sort((a,b) =>{
+    return a.localeCompare(b);
+})
+//Çıktı data: ['a', 'A', 'b', 'B', 'c', 'ç', 'Ç', 'd', 'D']
+```
+```
+---
