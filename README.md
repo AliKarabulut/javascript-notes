@@ -187,12 +187,11 @@ string3.localeCompare(string2)
 //Çıktı: 1
 
 `Dizi sıralamasına örnek`
-```
+
 let dizi = ["a","A","b","c","Ç","ç","B","d","D"]
 let data = dizis.sort((a,b) =>{
     return a.localeCompare(b);
 })
 //Çıktı data: ['a', 'A', 'b', 'B', 'c', 'ç', 'Ç', 'd', 'D']
-```
 ```
 ---
