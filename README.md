@@ -12,6 +12,8 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [indexOf()](#indexOf)
   - [lastIndexOf()](#lastIndexOf)
   - [length](#length)
+  - [localeCompare()](#localeCompare)
+  - [match()](#match)
 ---
 ## String Metotları
 
@@ -192,6 +194,18 @@ let dizi = ["a","A","b","c","Ç","ç","B","d","D"]
 let data = dizis.sort((a,b) =>{
     return a.localeCompare(b);
 })
+
 //Çıktı data: ['a', 'A', 'b', 'B', 'c', 'ç', 'Ç', 'd', 'D']
+```
+---
+### .match()
+Verilen regex için ifadeyi tarar ve eşleşmelerin çıktısını verir
+
+```
+const pangram = "Pijamalı hasta yağız şoföre çabucak Güvendi."
+const regex = /[A-Z]/g;
+
+pangram.match(regex)
+//Çıktı: ["P","G"]
 ```
 ---
