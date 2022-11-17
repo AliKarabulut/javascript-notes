@@ -256,3 +256,16 @@ nors1.length === nors2.length
 //Çıktı: true
 ```
 ---
+---
+### .padEnd()
+İki argüman alır ilk argüman sitringin olmasını istediğimiz uzunluğuyken ikinci argüman stringin ne ile doldurulacağıdır.
+
+ikinci argüman default değeri `boşluk => " "`'tur
+
+```
+const str = 'Pijamalı hasta.'
+
+str.padEnd(20,'abc')
+//Çıktı: Pijamalı hasta.abcab
+```
+---
