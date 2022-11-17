@@ -22,6 +22,7 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [repeat()](#repeat)
   - [replace()](#replace)
   - [replaceAll()](#replaceAll)
+  - [search()](#search)
 ---
 ## String Metotları
 
@@ -123,6 +124,8 @@ Stringi 0. indexten itibaren tarar
 İstenen değer bulunamazsa `-1` dönderir
 
 ikinci argüman stringin uzunluğundan fazla ise metot arama yapmadan `-1` dönderir
+
+Regular expression kullanımıza izin vermez bunun için search() metodunu kullanmalısınız
 
 ```
 const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi. Pijamalı"
@@ -328,6 +331,7 @@ str.replace(re, 'çocuk'))
 
 //Çıktı: Pijamalı çocuk yağız şoföre çabucak çocuk.
 ```
+---
 ### replaceAll()
 replace() metodundan farkı bütün eşleşmeleri değiştirmesidir.
 
@@ -337,4 +341,20 @@ const str = "Pijamalı hasta yağız şoföre çabucak hasta."
 
 str.replaceAll('hasta','çocuk')
 Çıktı: Pijamalı çocuk yağız şoföre çabucak çocuk.
+```
+---
+### search()
+Stringi 0. indexten itibaren tarar
+
+İstenen değer bulunamazsa `-1` dönderir
+
+Regular expression kullanımıza izin verir! Bu indexOf() metodundan farkıdır 
+```
+const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
+
+pangram.search('çabucak')
+//Çıktı: 28
+
+pangram.search(/has/i)
+//Çıktı: 9
 ```
