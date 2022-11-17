@@ -310,13 +310,11 @@ str.repeat(3)
 ```
 ---
 ### replace()
-String ifadede bir kelime ya da kelimeleri değiştirmez istediğimizde kullanırız.
+String ifadede bir kelime ya da kelimeleri değiştirmek istediğimizde kullanırız.
 
 Büyük küçük harf duyarlıdır.
 
 Birden çok kelimeyi değiştirecekseniz regular expression kullanmalısınız
-
-0-∞ değer alır
 ```
 const str = "Pijamalı hasta yağız şoföre çabucak hasta."
 
@@ -329,4 +327,14 @@ const str = 'Pijamalı hasta yağız şoföre çabucak hasta.'
 str.replace(re, 'çocuk'))
 
 //Çıktı: Pijamalı çocuk yağız şoföre çabucak çocuk.
+```
+### replaceAll()
+replace() metodundan farkı bütün eşleşmeleri değiştirmesidir.
+
+Büyük küçük harf duyarlıdır.
+```
+const str = "Pijamalı hasta yağız şoföre çabucak hasta."
+
+str.replaceAll('hasta','çocuk')
+Çıktı: Pijamalı çocuk yağız şoföre çabucak çocuk.
 ```
