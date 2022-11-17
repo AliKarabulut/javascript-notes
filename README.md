@@ -18,7 +18,7 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [normalize()](#normalize)
   - [padEnd()](#padEnd)
   - [padStart()](#PadStart)
-  - [String.raw()](#String.raw)
+  - [String.raw()](#Stringraw)
   - [repeat()](#repeat)
   - [replace()](#replace)
   - [replaceAll()](#replaceAll)
@@ -297,4 +297,14 @@ const dosyaYolu = "C:\Development\profile\aboutme.html"
 
 const dosyaYolu = String.raw`C:\Development\profile\aboutme.html`
 //Çıktı: C:\Development\profile\aboutme.html
+```
+---
+### repeat()
+Stringin belirtilen sayıda kopyasını içeren yeni bir string dönderir
+
+0-∞ değer alır
+```
+const str = "Selam Dünyalı"
+str.repeat(3)
+Çıktı: Selam DünyalıSelam DünyalıSelam Dünyalı
 ```
