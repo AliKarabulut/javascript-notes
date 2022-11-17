@@ -300,11 +300,33 @@ const dosyaYolu = String.raw`C:\Development\profile\aboutme.html`
 ```
 ---
 ### repeat()
-Stringin belirtilen sayıda kopyasını içeren yeni bir string dönderir
+Stringin belirtilen sayıda kopyasını içeren yeni bir string dönderir yani stringi değiştirmez
 
 0-∞ değer alır
 ```
 const str = "Selam Dünyalı"
 str.repeat(3)
 Çıktı: Selam DünyalıSelam DünyalıSelam Dünyalı
+```
+---
+### replace()
+String ifadede bir kelime ya da kelimeleri değiştirmez istediğimizde kullanırız.
+
+Büyük küçük harf duyarlıdır.
+
+Birden çok kelimeyi değiştirecekseniz regular expression kullanmalısınız
+
+0-∞ değer alır
+```
+const str = "Pijamalı hasta yağız şoföre çabucak hasta."
+
+str.replace('hasta','çocuk')
+Çıktı: Pijamalı çocuk yağız şoföre çabucak hasta.
+
+const re = /hasta/gi
+const str = 'Pijamalı hasta yağız şoföre çabucak hasta.'
+
+str.replace(re, 'çocuk'))
+
+//Çıktı: Pijamalı çocuk yağız şoföre çabucak çocuk.
 ```
