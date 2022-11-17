@@ -16,6 +16,9 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [match()](#match)
   - [matchAll()](#matchAll)
   - [normalize()](#normalize)
+  - [padEnd()](#padEnd)
+  - [padStart()](#PadStart)
+
 ---
 ## String Metotları
 
@@ -256,9 +259,8 @@ nors1.length === nors2.length
 //Çıktı: true
 ```
 ---
----
 ### .padEnd()
-İki argüman alır ilk argüman sitringin olmasını istediğimiz uzunluğuyken ikinci argüman stringin ne ile doldurulacağıdır.
+İki argüman alır ilk argüman sitringin olmasını istediğimiz uzunluğuyken ikinci argüman stringin sonunun ne ile doldurulacağıdır.
 
 ikinci argüman default değeri `boşluk => " "`'tur
 
@@ -269,3 +271,14 @@ str.padEnd(20,'abc')
 //Çıktı: Pijamalı hasta.abcab
 ```
 ---
+### .padStart()
+İki argüman alır ilk argüman sitringin olmasını istediğimiz uzunluğuyken ikinci argüman stringin başının ne ile doldurulacağıdır.
+
+ikinci argüman default değeri `boşluk => " "`'tur
+
+```
+const str = 'Pijamalı hasta.'
+
+str.padStart(20,'*')
+//Çıktı: *****Pijamalı hasta.
+```
