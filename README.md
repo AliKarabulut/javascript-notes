@@ -18,7 +18,10 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [normalize()](#normalize)
   - [padEnd()](#padEnd)
   - [padStart()](#PadStart)
-
+  - [String.raw()](#String.raw)
+  - [repeat()](#repeat)
+  - [replace()](#replace)
+  - [replaceAll()](#replaceAll)
 ---
 ## String Metotları
 
@@ -281,4 +284,17 @@ const str = 'Pijamalı hasta.'
 
 str.padStart(20,'*')
 //Çıktı: *****Pijamalı hasta.
+```
+---
+### String.raw()
+Yazılım dillerinde kaçış karakterleri bulunur bunlar string ifade çıktı alınırken eğer ki bunlara sahipse istenen sonuç alınamaz. Bu durumdan kaçınmak için kullanılır
+
+Tırnak işareti değil `BackTick` kullanılır
+
+```
+const dosyaYolu = "C:\Development\profile\aboutme.html"
+//Çıktı: C:Developmentprofileaboutme.html
+
+const dosyaYolu = String.raw`C:\Development\profile\aboutme.html`
+//Çıktı: C:\Development\profile\aboutme.html
 ```
