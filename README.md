@@ -25,6 +25,7 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [search()](#search)
   - [slice()](#slice)
   - [split()](#split)
+  - [startsWith()](#startsWith)
 ---
 ## String Metotları
 
@@ -404,4 +405,23 @@ str.split('hasta')
 
 str.split('hasta',2)
 //Çıktı: ["Pijamalı ", " yağız şoföre "]
+```
+---
+### startsWith()
+Stringin verilen değer ile başlayıp başlamadığını kontrol eder
+
+True ya da False döner
+
+İki değer alır ilk değer kontrol edilmesini istediğimiz değerken ikinci değer başlangıç indeksidir
+```
+const str = "Pijamalı hasta yağız şoföre çabucak güvendi."
+
+str.startsWith('Pija')
+//Çıktı: true
+
+str.split('hasta')
+//Çıktı: false
+
+str.split('hasta',9)
+//Çıktı: true
 ```
