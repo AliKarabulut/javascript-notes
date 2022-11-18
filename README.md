@@ -24,6 +24,7 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [replaceAll()](#replaceAll)
   - [search()](#search)
   - [slice()](#slice)
+  - [split()](#split)
 ---
 ## String Metotları
 
@@ -361,7 +362,7 @@ pangram.search(/has/i)
 ```
 ---
 ### slice()
-Stringin bir bölümünü çıkarır ve return eder.
+Stringin bir bölümünü çıkarır ve döner.
 
 Asıl dizeyi değiştirmez
 
@@ -382,4 +383,25 @@ pangram.slice(-16)
 
 pangram.slice(-8)
 //Çıktı: güvendi.
+```
+---
+### split()
+Stringi verilen değerden parçalara ayırır
+
+Asıl dizeyi değiştirmez
+
+Liste olarak döner
+
+İki argüman alır. İlk argüman stiringin parçalanmasını istediğimiz değerken ikinci argüman limittir
+```
+const str = "Pijamalı hasta yağız şoföre hasta çabucak güvendi."
+
+str.split(' ',3)
+//Çıktı: ['Pijamalı', 'hasta', 'yağız']
+
+str.split('hasta')
+//Çıktı: ["Pijamalı ", " yağız şoföre ", " çabucak güvendi."]
+
+str.split('hasta',2)
+//Çıktı: ["Pijamalı ", " yağız şoföre "]
 ```
