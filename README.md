@@ -23,6 +23,7 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [replace()](#replace)
   - [replaceAll()](#replaceAll)
   - [search()](#search)
+  - [slice()](#slice)
 ---
 ## String Metotları
 
@@ -352,9 +353,33 @@ Regular expression kullanımıza izin verir! Bu indexOf() metodundan farkıdır
 ```
 const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
 
-pangram.search('çabucak')
+pangram.search('çabu')
 //Çıktı: 28
 
 pangram.search(/has/i)
 //Çıktı: 9
+```
+---
+### slice()
+Stringin bir bölümünü çıkarır ve return eder.
+
+Asıl dizeyi değiştirmez
+
+İki argüman alır. İlk argüman dahil son argüman dahil değildir
+
+Eksi değer alabilir bu durumda stringin sonundan itibaren hesaplar
+```
+const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
+
+pangram.slice(28)
+//Çıktı: çabucak güvendi.
+
+pangram.slice(9,14)
+//Çıktı: hasta
+
+pangram.slice(-16)
+//Çıktı: çabucak güvendi
+
+pangram.slice(-8)
+//Çıktı: güvendi.
 ```
