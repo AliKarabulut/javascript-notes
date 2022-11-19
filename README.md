@@ -425,3 +425,24 @@ str.split('hasta')
 str.split('hasta',9)
 //Çıktı: true
 ```
+---
+### substring()
+Slice metodundaki gibi stringin bir bölümünü çıkarır ve döner.
+
+Asıl dizeyi değiştirmez
+
+İki argüman alır. İlk argüman dahil son argüman dahil değildir
+
+Slice'dan farkı negatif değer alamamasıdır. Negatif değer verilirse stringin tamamını döner
+```
+const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
+
+pangram.substring(28)
+//Çıktı: çabucak güvendi.
+
+pangram.substring(9,14)
+//Çıktı: hasta
+
+pangram.substring(-16)
+//Çıktı: Pijamalı hasta yağız şoföre çabucak güvendi.
+```
