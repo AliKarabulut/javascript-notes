@@ -454,11 +454,24 @@ Stringi küçük harfe dönderir
 
 İstenirse içine dönüşüm yapılacak dil kodu da girilebilir
 ```
-const pangram = "YAĞIZ ŞOFÖR"
+const str = "YAĞIZ ŞOFÖR"
 
-pangram.toLowerCase()
-//Çıktı: yağız şoför.
+str.toLowerCase()
+//Çıktı: yağız şoför
 
-pangram.toLowerCase('en-US')
+str.toLowerCase('en-US')
 //Çıktı: yağiz şoför
+```
+### .toLocaleUpperCase()
+Stringi büyük harfe dönderir
+
+İstenirse içine dönüşüm yapılacak dil kodu da girilebilir
+```
+const str = "pijamalı hasta"
+
+str.toLocaleUpperCase()
+//Çıktı: PİJAMALI HASTA
+
+str.toLocaleUpperCase('en-US')
+//Çıktı: PIJAMALI HASTA
 ```
