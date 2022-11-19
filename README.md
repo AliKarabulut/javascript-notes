@@ -27,6 +27,8 @@
   - [split()](#split)
   - [startsWith()](#startsWith)
   - [substring()](#substring)
+  - [toLocaleLowerCase()](#toLocaleLowerCase)
+  - [toLocaleUpperCase()](#toLocaleUpperCase)
 ---
 ## String Metotları
 
@@ -306,7 +308,7 @@ const dosyaYolu = String.raw`C:\Development\profile\aboutme.html`
 //Çıktı: C:\Development\profile\aboutme.html
 ```
 ---
-### repeat()
+### .repeat()
 Stringin belirtilen sayıda kopyasını içeren yeni bir string dönderir yani stringi değiştirmez
 
 0-∞ değer alır
@@ -316,7 +318,7 @@ str.repeat(3)
 Çıktı: Selam DünyalıSelam DünyalıSelam Dünyalı
 ```
 ---
-### replace()
+### .replace()
 String ifadede bir kelime ya da kelimeleri değiştirmek istediğimizde kullanırız.
 
 Büyük küçük harf duyarlıdır.
@@ -336,7 +338,7 @@ str.replace(re, 'çocuk'))
 //Çıktı: Pijamalı çocuk yağız şoföre çabucak çocuk.
 ```
 ---
-### replaceAll()
+### .replaceAll()
 replace() metodundan farkı bütün eşleşmeleri değiştirmesidir.
 
 Büyük küçük harf duyarlıdır.
@@ -347,7 +349,7 @@ str.replaceAll('hasta','çocuk')
 Çıktı: Pijamalı çocuk yağız şoföre çabucak çocuk.
 ```
 ---
-### search()
+### .search()
 Stringi 0. indexten itibaren tarar
 
 İstenen değer bulunamazsa `-1` dönderir
@@ -363,7 +365,7 @@ pangram.search(/has/i)
 //Çıktı: 9
 ```
 ---
-### slice()
+### .slice()
 Stringin bir bölümünü çıkarır ve döner.
 
 Asıl dizeyi değiştirmez
@@ -387,7 +389,7 @@ pangram.slice(-8)
 //Çıktı: güvendi.
 ```
 ---
-### split()
+### .split()
 Stringi verilen değerden parçalara ayırır
 
 Asıl dizeyi değiştirmez
@@ -408,7 +410,7 @@ str.split('hasta',2)
 //Çıktı: ["Pijamalı ", " yağız şoföre "]
 ```
 ---
-### startsWith()
+### .startsWith()
 Stringin verilen değer ile başlayıp başlamadığını kontrol eder
 
 True ya da False döner
@@ -427,7 +429,7 @@ str.split('hasta',9)
 //Çıktı: true
 ```
 ---
-### substring()
+### .substring()
 Slice metodundaki gibi stringin bir bölümünü çıkarır ve döner.
 
 Asıl dizeyi değiştirmez
@@ -446,4 +448,17 @@ pangram.substring(9,14)
 
 pangram.substring(-16)
 //Çıktı: Pijamalı hasta yağız şoföre çabucak güvendi.
+```
+### .toLocaleLowerCase()
+Stringi küçük harfe dönderir
+
+İstenirse içine dönüşüm yapılacak dil kodu da girilebilir
+```
+const pangram = "YAĞIZ ŞOFÖR"
+
+pangram.toLowerCase()
+//Çıktı: yağız şoför.
+
+pangram.toLowerCase('en-US')
+//Çıktı: yağiz şoför
 ```
