@@ -1,5 +1,5 @@
 # Javascript Methot Rehberi
-Bu rehber hatırlatma amacı taşımaktadır. 
+### Bu rehber hatırlatma amacı taşımaktadır! 
 ---
 ## İçindekiler
 * [String Metotları](#String-Metotları)
@@ -26,6 +26,7 @@ Bu rehber hatırlatma amacı taşımaktadır.
   - [slice()](#slice)
   - [split()](#split)
   - [startsWith()](#startsWith)
+  - [substring()](#substring)
 ---
 ## String Metotları
 
