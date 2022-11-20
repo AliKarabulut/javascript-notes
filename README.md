@@ -29,6 +29,9 @@
   - [substring()](#substring)
   - [toLocaleLowerCase()](#toLocaleLowerCase)
   - [toLocaleUpperCase()](#toLocaleUpperCase)
+  - [toLowerCase()](#toLowerCase)
+  - [toUpperCase()](#toUpperCase)
+  - [trim()](#trim)
 ---
 ## String Metotları
 
@@ -490,11 +493,18 @@ str.toLowerCase()
 ---
 ### .toUpperCase()
 String ifadeyi büyük harflere dönüştürür.
-
-İstenirse içine dönüşüm yapılacak dil kodu da girilebilir
 ```
 const str = "pijamalı hasta"
 
 str.toLocaleUpperCase()
 //Çıktı: PIJAMALI HASTA
+```
+---
+### .trim()
+String ifadenin başındaki ve sonundaki boşlukları 
+```
+const str = "   Pijamalı Hasta   "
+
+str.trim()
+//Çıktı: Pijamalı Hasta
 ```
