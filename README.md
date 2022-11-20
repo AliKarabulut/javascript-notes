@@ -487,3 +487,14 @@ str.toLowerCase()
 //Çıktı: yağiz şoför
 
 ```
+---
+### .toUpperCase()
+String ifadeyi büyük harflere dönüştürür.
+
+İstenirse içine dönüşüm yapılacak dil kodu da girilebilir
+```
+const str = "pijamalı hasta"
+
+str.toLocaleUpperCase()
+//Çıktı: PIJAMALI HASTA
+```
