@@ -519,6 +519,7 @@ const str = "   Pijamalı Hasta   "
 str.trimStart()
 //Çıktı: "Pijamalı Hasta     "
 ```
+---
 ### .trimEnd()
 String ifadenin sonundaki boşlukları kaldırır
 ```
@@ -526,4 +527,17 @@ const str = "   Pijamalı Hasta   "
 
 str.trimEnd()
 //Çıktı: "     Pijamalı Hasta"
+```
+---
+### .toString()
+Kendisine tanımlanan değişken değerini string olarak değiştirerek döndürür.
+```
+const num = 684
+const bool = true
+
+str.toString()
+//Çıktı: "684"
+
+str.toString()
+//Çıktı: "true"
 ```
