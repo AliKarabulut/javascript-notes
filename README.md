@@ -456,12 +456,13 @@ Stringi küçük harfe dönderir
 ```
 const str = "YAĞIZ ŞOFÖR"
 
-str.toLowerCase()
-//Çıktı: yağız şoför
-
-str.toLowerCase('en-US')
+str.toLocaleLowerCase()
 //Çıktı: yağiz şoför
+
+str.toLocaleLowerCase('tr')
+//Çıktı: yağız şoför
 ```
+---
 ### .toLocaleUpperCase()
 Stringi büyük harfe dönderir
 
@@ -474,4 +475,15 @@ str.toLocaleUpperCase()
 
 str.toLocaleUpperCase('en-US')
 //Çıktı: PIJAMALI HASTA
+```
+---
+### .toLowerCase()
+String ifadeyi küçük harflere dönüştürür.
+
+```
+const str = "YAĞIZ ŞOFÖR"
+
+str.toLowerCase()
+//Çıktı: yağiz şoför
+
 ```
