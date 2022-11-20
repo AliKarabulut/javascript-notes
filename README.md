@@ -512,10 +512,18 @@ str.trim()
 ```
 ---
 ### .trimStart()
-String ifadenin başındaki ve sonundaki boşlukları 
+String ifadenin başındaki boşlukları kaldırır
 ```
 const str = "   Pijamalı Hasta   "
 
-str.trim()
+str.trimStart()
 //Çıktı: "Pijamalı Hasta     "
+```
+### .trimEnd()
+String ifadenin sonundaki boşlukları kaldırır
+```
+const str = "   Pijamalı Hasta   "
+
+str.trimEnd()
+//Çıktı: "     Pijamalı Hasta"
 ```
