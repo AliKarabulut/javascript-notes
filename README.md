@@ -32,6 +32,8 @@
   - [toLowerCase()](#toLowerCase)
   - [toUpperCase()](#toUpperCase)
   - [trim()](#trim)
+  - [trimStart()](#trim)
+  - [trimEnd()](#trim)
 ---
 ## String Metotları
 
@@ -507,4 +509,13 @@ const str = "   Pijamalı Hasta   "
 
 str.trim()
 //Çıktı: Pijamalı Hasta
+```
+---
+### .trimStart()
+String ifadenin başındaki ve sonundaki boşlukları 
+```
+const str = "   Pijamalı Hasta   "
+
+str.trim()
+//Çıktı: "Pijamalı Hasta     "
 ```
