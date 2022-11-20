@@ -34,6 +34,7 @@
   - [trim()](#trim)
   - [trimStart()](#trim)
   - [trimEnd()](#trim)
+  - [toString()](#toString)
 ---
 ## String Metotları
 
