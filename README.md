@@ -35,6 +35,10 @@
   - [trimStart()](#trim)
   - [trimEnd()](#trim)
   - [toString()](#toString)
+
+* [Number Metotları](#Number-Metotları)
+  - [Number()](#Number)
+
 ---
 ## String Metotları
 
@@ -542,3 +546,22 @@ str.toString()
 str.toString()
 //Çıktı: "true"
 ```
+## Number Metotları
+
+
+### Number()
+Her hangi bir veri türünü sayıya çevirmek için kullanırız
+```
+Number("5")
+//Çıktı: 5
+
+Number("    5")
+//Çıktı: 5
+
+Number(true)
+//Çıktı: 1
+
+Number("5a")
+//Çıktı: NAN
+```
+---
