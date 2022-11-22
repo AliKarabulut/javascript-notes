@@ -39,6 +39,7 @@
 * [Number Metotları](#Number-Metotları)
   - [Number()](#Number)
   - [Number.isFinite()](#NumberisFinite)
+  - [Number.isInteger()](#NumberisInteger)
 
 ---
 ## String Metotları
@@ -581,5 +582,20 @@ Number.isFinite(islem1)
 //Çıktı: true
 
 Number.isFinite(islem2)
+//Çıktı: false
+```
+---
+### Number.isInteger()
+Yapılan sayısal işlemin sonucunun ya da verilen değerin tam sayı olup olmadığını kontrol eder Sonucunda `true - false` dönderir
+```
+const islem = 5/2
+
+Number.isInteger(islem)
+//Çıktı: false
+
+Number.isInteger(5)
+//Çıktı: true
+
+Number.isInteger(5.5)
 //Çıktı: false
 ```
