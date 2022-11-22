@@ -38,6 +38,7 @@
 
 * [Number Metotları](#Number-Metotları)
   - [Number()](#Number)
+  - [Number.isFinite()](#NumberisFinite)
 
 ---
 ## String Metotları
@@ -565,3 +566,20 @@ Number("5a")
 //Çıktı: NAN
 ```
 ---
+### Number.isFinite()
+Yapılan sayısal işlemin sonucunun sonlu olup olmadığını kontrol eder
+
+Sonzuz ise `false` dönderir
+
+Sonlu ise `true` dönderir
+
+```
+const islem1 = 5
+const islem2 = 1/0
+
+Number.isFinite(islem1)
+//Çıktı: true
+
+Number.isFinite(islem2)
+//Çıktı: false
+```
