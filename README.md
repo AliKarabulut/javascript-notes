@@ -41,10 +41,10 @@
   - [Number.isFinite()](#NumberisFinite)
   - [Number.isInteger()](#NumberisInteger)
   - [Number.isSafeInteger()](#NumberisSafeInteger)
-  - [Number.MAX_SAFE_INTEGER](#NumberMAXSAFFEINTEGER)
-  - [Number.MAX_VALUE](#NumberMAXVALUE)
-  - [Number.MIN_SAFE_INTEGER](#NumberMINSAFEINTEGER)
-  - [Number.MIN_VALUE](#NumberMINVALUE)
+  - [Number.MAX_SAFE_INTEGER](#NumberMAX_SAFFE_INTEGER)
+  - [Number.MAX_VALUE](#NumberMAX_VALUE)
+  - [Number.MIN_SAFE_INTEGER](#NumberMIN_SAFE_INTEGER)
+  - [Number.MIN_VALUE](#NumberMIN_VALUE)
 
 ---
 ## String Metotları
