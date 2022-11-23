@@ -631,14 +631,25 @@ Number.isSafeInteger(5.1)
 ```
 ---
 ### Number.MAX_SAFE_INTEGER
-En büyük güvenilir tam sayıyı verir
+En büyük güvenilir tam sayıyı temsil eder.
 ```
 Number.MAX_SAFE_INTEGER
 //Çıktı: 9007199254740991
 ```
 ---
+### Number.MAX_VALUE
+Javascriptte gösterilebilen en büyük sayısal değeri temsil eder.
+
+Javascript bu değerin üstünü sonsuz olarak ifade eder.
+
+Değer `1.79E+308` yani `1,7976931348623157 × 10^308'dir`.
+```
+Number.MAX_VALUE
+//Çıktı: -9007199254740991
+```
+---
 ### Number.MIN_SAFE_INTEGER
-En küçük güvenilir tam sayıyı verir
+En küçük güvenilir tam sayıyı temsil eder
 ```
 Number.MIN_SAFE_INTEGER
 //Çıktı: -9007199254740991
