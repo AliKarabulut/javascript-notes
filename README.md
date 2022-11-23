@@ -41,6 +41,10 @@
   - [Number.isFinite()](#NumberisFinite)
   - [Number.isInteger()](#NumberisInteger)
   - [Number.isSafeInteger()](#NumberisSafeInteger)
+  - [Number.MAX_SAFE_INTEGER](#NumberMAXSAFFEINTEGER)
+  - [Number.MAX_VALUE](#NumberMAXVALUE)
+  - [Number.MIN_SAFE_INTEGER](#NumberMINSAFEINTEGER)
+  - [Number.MIN_VALUE](#NumberMINVALUE)
 
 ---
 ## String Metotları
@@ -600,6 +604,7 @@ Number.isInteger(5)
 Number.isInteger(5.5)
 //Çıktı: false
 ```
+---
 ### Number.isSafeInteger()
 Sayısal değerin güvenilir olup olmadığını kontrol eder. `true / false` dönderir
 
@@ -623,4 +628,11 @@ Number.isSafeInteger(5.1)
 9007199254740992 + 1 = ...2
 9007199254740992 + 2 = ...4
 9007199254740992 + 3 = ...6
+```
+---
+### Number.MAX_SAFE_INTEGER
+En büyük güvenilir tam sayıyı verir
+```
+Number.MAX_SAFE_INTEGER
+//Çıktı: 9007199254740991
 ```
