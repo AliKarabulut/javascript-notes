@@ -40,6 +40,7 @@
   - [Number()](#Number)
   - [Number.isFinite()](#NumberisFinite)
   - [Number.isInteger()](#NumberisInteger)
+  - [Number.isSafeInteger()](#NumberisSafeInteger)
 
 ---
 ## String Metotları
@@ -586,7 +587,7 @@ Number.isFinite(islem2)
 ```
 ---
 ### Number.isInteger()
-Yapılan sayısal işlemin sonucunun ya da verilen değerin tam sayı olup olmadığını kontrol eder Sonucunda `true - false` dönderir
+Yapılan sayısal işlemin sonucunun ya da verilen değerin tam sayı olup olmadığını kontrol eder Sonucunda `true / false` dönderir
 ```
 const islem = 5/2
 
@@ -598,4 +599,28 @@ Number.isInteger(5)
 
 Number.isInteger(5.5)
 //Çıktı: false
+```
+### Number.isSafeInteger()
+Sayısal değerin güvenilir olup olmadığını kontrol eder. `true / false` dönderir
+
+Javascriptte tam sayılar `-2^53 +1 / 2^53 -1` aralığı güvenilir tamsayı olarak ifade edilir. Bu değerlerin üstündeki bir değeri javascript hesaplarken bir veya daha fazla işlem aynı sonuçları verir.
+
+Noktalı sayılar tam sayı olmadığı için `false` dönderir.
+```
+//
+
+Number.isSafeInteger(9007199254740991)
+//Çıktı: true
+
+Number.isSafeInteger(5.1)
+//Çıktı: false
+
+9007199254740991 + 1
+//Çıktı: true
+
+
+9007199254740992 + 0 = ...2
+9007199254740992 + 1 = ...2
+9007199254740992 + 2 = ...4
+9007199254740992 + 3 = ...6
 ```
