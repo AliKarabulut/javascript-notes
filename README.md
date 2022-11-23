@@ -654,3 +654,12 @@ En küçük güvenilir tam sayıyı temsil eder
 Number.MIN_SAFE_INTEGER
 //Çıktı: -9007199254740991
 ```
+---
+### Number.MIN_VALUE
+Javascriptte pozitif sıfıra en yakın sayıyı temsil eder.
+
+Değer `5e-324` yani `2^-1074'dür`.
+```
+Number.MIN_VALUE
+//Çıktı: 5e-324
+```
