@@ -636,3 +636,10 @@ En büyük güvenilir tam sayıyı verir
 Number.MAX_SAFE_INTEGER
 //Çıktı: 9007199254740991
 ```
+---
+### Number.MIN_SAFE_INTEGER
+En küçük güvenilir tam sayıyı verir
+```
+Number.MIN_SAFE_INTEGER
+//Çıktı: -9007199254740991
+```
