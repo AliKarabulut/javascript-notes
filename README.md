@@ -49,6 +49,8 @@
   - [Number.NEGATIVE_INFINITY](#NumberNEGATIVE_INFINITY)
   - [parseFloat()](#parseFloat)
   - [parseInt()](#parseInt)
+  - [toFixed()](#toFixed)
+  - [toLocaleString()](#toLocaleString)
 ---
 ## String Metotları
 
@@ -717,7 +719,7 @@ parseInt(10,2)
 //Çıktı: 2
 ```
 ---
-### .ToFixed()
+### .toFixed()
 Sayısal değerin noktadan sonra kaç basamaklı olmasını istiyorsak parametre olarak veririz. Parametre verilmezse basamakları tamamen kaldırır.
 
 Sayıları yuvarlama yaparak verir.
@@ -734,4 +736,18 @@ num.toFixed(2)
 
 num.toFixed(5)
 //Çıktı: 45.54700
+```
+---
+### .toLocaleString()
+Tarih, saat, sayılar,nesneler,dizileri alır ve istenen dilde dizeye dönüştürür.
+```
+const date = new Date()
+date.toLocaleString('tr-TR')
+
+//Çıktı: 25.11.2022 20:44:20
+
+const num = 123456.789
+date.toLocaleString('ar-EG')
+
+//Çıktı: ١٢٣٤٥٦٫٧٨٩
 ```
