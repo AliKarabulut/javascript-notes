@@ -45,6 +45,7 @@
   - [Number.MAX_VALUE](#NumberMAX_VALUE)
   - [Number.MIN_SAFE_INTEGER](#NumberMIN_SAFE_INTEGER)
   - [Number.MIN_VALUE](#NumberMIN_VALUE)
+  - [Number.POSITIVE_INFINITY](#NumberPOSITIVE_INFINITY)
   - [Number.NEGATIVE_INFINITY](#NumberNEGATIVE_INFINITY)
   - [parseFloat()](#parseFloat)
   - [parseInt()](#parseInt)
@@ -664,6 +665,13 @@ Değer `5e-324` yani `2^-1074'dür`.
 ```
 Number.MIN_VALUE
 //Çıktı: 5e-324
+```
+---
+### Number.POSITIVE_INFINITY
+Pozitif sonsuzluğu temsil eder
+```
+Number.NEGATIVE_INFINITY
+//Çıktı: Infinity
 ```
 ---
 ### Number.NEGATIVE_INFINITY
