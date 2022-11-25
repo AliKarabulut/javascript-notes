@@ -52,6 +52,7 @@
   - [toFixed()](#toFixed)
   - [toLocaleString()](#toLocaleString)
   - [toPrecision()](#toPrecision)
+  - [toString()](#toString)
 ---
 ## String Metotları
 
@@ -760,4 +761,13 @@ const num = 45.567
 
 num.toPrecision(3)
 //Çıktı: 45.6
+```
+---
+### .toString()
+Sayısal değeri string ifadeye dönüştürür.
+```
+const num = 45.567
+
+num.toString()
+//Çıktı: "45.567"
 ```
