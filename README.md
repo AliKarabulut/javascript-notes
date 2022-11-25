@@ -47,6 +47,7 @@
   - [Number.MIN_VALUE](#NumberMIN_VALUE)
   - [Number.NEGATIVE_INFINITY](#NumberNEGATIVE_INFINITY)
   - [parseFloat()](#parseFloat)
+  - [parseInt()](#parseInt)
 ---
 ## String Metotları
 
@@ -114,7 +115,7 @@ let sonuc = string1.concat(string2,":)",...list)
 ### .endswith()
 Stringin istenen kelime ya da karakterle bitip bitmediğini kontrol eder `True/False` dönderir.
 
-İkinci argüman olarak index değeri alır istenen bitiş verilen indekse karşılık geliyorsa `True` dönderir
+İkinci parametre olarak index değeri alır istenen bitiş verilen indekse karşılık geliyorsa `True` dönderir
 ```
 const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
 
@@ -143,11 +144,11 @@ pangram.includes('Güvendi.')
 ### .indexOf()
 Stringi 0. indexten itibaren tarar
 
-İki argüman alır ilk argüman istenen değer iken ikinci argüman kaçıncı indeksten itibaren bakılması istendiğidir.
+İki parametre alır ilk parametre istenen değer iken ikinci parametre kaçıncı indeksten itibaren bakılması istendiğidir.
 
 İstenen değer bulunamazsa `-1` dönderir
 
-ikinci argüman stringin uzunluğundan fazla ise metot arama yapmadan `-1` dönderir
+ikinci parametre stringin uzunluğundan fazla ise metot arama yapmadan `-1` dönderir
 
 Regular expression kullanımıza izin vermez bunun için search() metodunu kullanmalısınız
 
@@ -167,11 +168,11 @@ pangram.indexOf('Pija',20)
 ### .lastIndexOf()
 Stringi sondan tarayarak istenen değeri arar
 
-İki argüman alır ilk argüman istenen değer iken ikinci argüman kaçıncı indeksten itibaren geriye bakılması istendiğidir.
+İki parametre alır ilk parametre istenen değer iken ikinci parametre kaçıncı indeksten itibaren geriye bakılması istendiğidir.
 
 İstenen değer bulunamazsa `-1` dönderir
 
-ikinci argüman <0 ise `0` indeksine bakar
+ikinci parametre <0 ise `0` indeksine bakar
 
 Boş `''` değeri verilirse `stringin uzunluğunu` dönderir
 
@@ -290,9 +291,9 @@ nors1.length === nors2.length
 ```
 ---
 ### .padEnd()
-İki argüman alır ilk argüman sitringin olmasını istediğimiz uzunluğuyken ikinci argüman stringin sonunun ne ile doldurulacağıdır.
+İki parametre alır ilk parametre sitringin olmasını istediğimiz uzunluğuyken ikinci parametre stringin sonunun ne ile doldurulacağıdır.
 
-ikinci argüman default değeri `boşluk => " "`'tur
+ikinci parametre default değeri `boşluk => " "`'tur
 
 ```
 const str = 'Pijamalı hasta.'
@@ -302,9 +303,9 @@ str.padEnd(20,'abc')
 ```
 ---
 ### .padStart()
-İki argüman alır ilk argüman sitringin olmasını istediğimiz uzunluğuyken ikinci argüman stringin başının ne ile doldurulacağıdır.
+İki parametre alır ilk parametre sitringin olmasını istediğimiz uzunluğuyken ikinci parametre stringin başının ne ile doldurulacağıdır.
 
-ikinci argüman default değeri `boşluk => " "`'tur
+ikinci parametre default değeri `boşluk => " "`'tur
 
 ```
 const str = 'Pijamalı hasta.'
@@ -388,7 +389,7 @@ Stringin bir bölümünü çıkarır ve döner.
 
 Asıl dizeyi değiştirmez
 
-İki argüman alır. İlk argüman dahil son argüman dahil değildir
+İki parametre alır. İlk parametre dahil son parametre dahil değildir
 
 Eksi değer alabilir bu durumda stringin sonundan itibaren hesaplar
 ```
@@ -414,7 +415,7 @@ Asıl dizeyi değiştirmez
 
 Liste olarak döner
 
-İki argüman alır. İlk argüman stiringin parçalanmasını istediğimiz değerken ikinci argüman limittir
+İki parametre alır. İlk parametre stiringin parçalanmasını istediğimiz değerken ikinci parametre limittir
 ```
 const str = "Pijamalı hasta yağız şoföre hasta çabucak güvendi."
 
@@ -452,7 +453,7 @@ Slice metodundaki gibi stringin bir bölümünü çıkarır ve döner.
 
 Asıl dizeyi değiştirmez
 
-İki argüman alır. İlk argüman dahil son argüman dahil değildir
+İki parametre alır. İlk parametre dahil son parametre dahil değildir
 
 Slice'dan farkı negatif değer alamamasıdır. Negatif değer verilirse stringin tamamını döner
 ```
@@ -671,10 +672,30 @@ Negatif sonsuzluğu temsil eder
 Number.NEGATIVE_INFINITY
 //Çıktı: -Infinity
 ```
+---
 ### .parseFloat()
-Verilen değerleri ondalıklı sayı haline dönüştürür ve döner.
+Verilen değeri ondalıklı sayı haline dönüştürür ve döner.
 
 Artı, eksi, nokta haricinde bir değer görürse durur ve  devamını dahil etmez.
+
+Verilen değerden sayı ayrıştırılamazsa `NaN` döner
+```
+parseFloat('45asdf')
+//Çıktı: 45
+
+parseFloat('99.9asdf')
+//Çıktı: 99.9
+
+parseFloat("r3232")
+//Çıktı: NaN
+```
+---
+### .parseInt()
+Verilen string ya da sayı değerini tam sayıya çevirir
+
+İkinci parametre hangi tabanda çevrileceğini belirtir
+
+İkinci parametre verilmezse 10 tabanında dönüşüm yapar
 
 Verilen değerden sayı ayrıştırılamazsa `NaN` döner
 ```
