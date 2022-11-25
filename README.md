@@ -715,5 +715,23 @@ parseInt('99.9asdf')
 
 parseInt(10,2)
 //Çıktı: 2
+```
+---
+### .ToFixed()
+Sayısal değerin noktadan sonra kaç basamaklı olmasını istiyorsak parametre olarak veririz. Parametre verilmezse basamakları tamamen kaldırır.
 
+Sayıları yuvarlama yaparak verir.
+
+Sayısal ifadenin noktadan sonrasının uzunluğundan daha büyük bir sayı verilirse sonunu `0` ile doldurur 
+```
+const num = 45.547
+
+num.toFixed()
+//Çıktı: 46
+
+num.toFixed(2)
+//Çıktı: 45.55
+
+num.toFixed(5)
+//Çıktı: 45.54700
 ```
