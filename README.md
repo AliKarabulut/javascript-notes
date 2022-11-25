@@ -699,12 +699,13 @@ Verilen string ya da sayı değerini tam sayıya çevirir
 
 Verilen değerden sayı ayrıştırılamazsa `NaN` döner
 ```
-parseFloat('45asdf')
+parseInt('45asdf')
 //Çıktı: 45
 
-parseFloat('99.9asdf')
-//Çıktı: 99.9
+parseInt('99.9asdf')
+//Çıktı: 99
 
-parseFloat("r3232")
-//Çıktı: NaN
+parseInt(10,2)
+//Çıktı: 2
+
 ```
