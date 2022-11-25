@@ -51,6 +51,7 @@
   - [parseInt()](#parseInt)
   - [toFixed()](#toFixed)
   - [toLocaleString()](#toLocaleString)
+  - [toPrecision()](#toPrecision)
 ---
 ## String Metotları
 
@@ -750,4 +751,13 @@ const num = 123456.789
 date.toLocaleString('ar-EG')
 
 //Çıktı: ١٢٣٤٥٦٫٧٨٩
+```
+---
+### .toPrecision()
+toFixed ile aynı şeyi yapar farkları toPrecision metodunun tam kısmı da dahil etmesidir.
+```
+const num = 45.567
+
+num.toPrecision(3)
+//Çıktı: 45.6
 ```
