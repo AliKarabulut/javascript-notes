@@ -46,7 +46,7 @@
   - [Number.MIN_SAFE_INTEGER](#NumberMIN_SAFE_INTEGER)
   - [Number.MIN_VALUE](#NumberMIN_VALUE)
   - [Number.NEGATIVE_INFINITY](#NumberNEGATIVE_INFINITY)
-  - [Number.parseFloat()](#NumberparseFloat)
+  - [parseFloat()](#parseFloat)
 ---
 ## String Metotları
 
@@ -671,8 +671,19 @@ Negatif sonsuzluğu temsil eder
 Number.NEGATIVE_INFINITY
 //Çıktı: -Infinity
 ```
-### Number.parseFloat()
+### .parseFloat()
+Verilen değerleri ondalıklı sayı haline dönüştürür ve döner.
 
+Artı, eksi, nokta haricinde bir değer görürse durur ve  devamını dahil etmez.
+
+Verilen değerden sayı ayrıştırılamazsa `NaN` döner
 ```
+parseFloat('45asdf')
+//Çıktı: 45
 
+parseFloat('99.9asdf')
+//Çıktı: 99.9
+
+parseFloat("r3232")
+//Çıktı: NaN
 ```
