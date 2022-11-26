@@ -514,6 +514,7 @@ str.toLowerCase()
 ---
 ### .toUpperCase()
 String ifadeyi büyük harflere dönüştürür.
+
 ```
 const str = "pijamalı hasta"
 
@@ -522,7 +523,8 @@ str.toLocaleUpperCase()
 ```
 ---
 ### .trim()
-String ifadenin başındaki ve sonundaki boşlukları 
+String ifadenin başındaki ve sonundaki boşlukları kaldırır.
+
 ```
 const str = "   Pijamalı Hasta   "
 
@@ -531,7 +533,7 @@ str.trim()
 ```
 ---
 ### .trimStart()
-String ifadenin başındaki boşlukları kaldırır
+String ifadenin başındaki boşlukları kaldırır.
 ```
 const str = "   Pijamalı Hasta   "
 
@@ -540,7 +542,8 @@ str.trimStart()
 ```
 ---
 ### .trimEnd()
-String ifadenin sonundaki boşlukları kaldırır
+String ifadenin sonundaki boşlukları kaldırır.
+
 ```
 const str = "   Pijamalı Hasta   "
 
@@ -550,6 +553,7 @@ str.trimEnd()
 ---
 ### .toString()
 Kendisine tanımlanan değişken değerini string olarak değiştirerek döndürür.
+
 ```
 const num = 684
 const bool = true
@@ -561,7 +565,6 @@ str.toString()
 //Çıktı: "true"
 ```
 ## Number Metotları
-
 
 ### Number()
 Her hangi bir veri türünü sayıya çevirmek için kullanırız
@@ -599,6 +602,7 @@ Number.isFinite(islem2)
 ---
 ### Number.isInteger()
 Yapılan sayısal işlemin sonucunun ya da verilen değerin tam sayı olup olmadığını kontrol eder Sonucunda `true / false` dönderir
+
 ```
 const islem = 5/2
 
@@ -618,6 +622,7 @@ Sayısal değerin güvenilir olup olmadığını kontrol eder. `true / false` d�
 Javascriptte tam sayılar `-2^53 +1 / 2^53 -1` aralığı güvenilir tamsayı olarak ifade edilir. Bu değerlerin üstündeki bir değeri javascript hesaplarken bir veya daha fazla işlem aynı sonuçları verir.
 
 Noktalı sayılar tam sayı olmadığı için `false` dönderir.
+
 ```
 //
 
@@ -639,6 +644,7 @@ Number.isSafeInteger(5.1)
 ---
 ### Number.MAX_SAFE_INTEGER
 En büyük güvenilir tam sayıyı temsil eder.
+
 ```
 Number.MAX_SAFE_INTEGER
 //Çıktı: 9007199254740991
@@ -650,6 +656,7 @@ Javascriptte gösterilebilen en büyük sayısal değeri temsil eder.
 Javascript bu değerin üstünü sonsuz olarak ifade eder.
 
 Değer `1.79E+308` yani `1,7976931348623157 × 10^308'dir`.
+
 ```
 Number.MAX_VALUE
 //Çıktı: -9007199254740991
@@ -657,6 +664,7 @@ Number.MAX_VALUE
 ---
 ### Number.MIN_SAFE_INTEGER
 En küçük güvenilir tam sayıyı temsil eder
+
 ```
 Number.MIN_SAFE_INTEGER
 //Çıktı: -9007199254740991
@@ -666,6 +674,7 @@ Number.MIN_SAFE_INTEGER
 Javascriptte pozitif sıfıra en yakın sayıyı temsil eder.
 
 Değer `5e-324` yani `2^-1074'dür`.
+
 ```
 Number.MIN_VALUE
 //Çıktı: 5e-324
@@ -673,6 +682,7 @@ Number.MIN_VALUE
 ---
 ### Number.POSITIVE_INFINITY
 Pozitif sonsuzluğu temsil eder
+
 ```
 Number.NEGATIVE_INFINITY
 //Çıktı: Infinity
@@ -680,6 +690,7 @@ Number.NEGATIVE_INFINITY
 ---
 ### Number.NEGATIVE_INFINITY
 Negatif sonsuzluğu temsil eder
+
 ```
 Number.NEGATIVE_INFINITY
 //Çıktı: -Infinity
@@ -691,6 +702,7 @@ Verilen değeri ondalıklı sayı haline dönüştürür ve döner.
 Artı, eksi, nokta haricinde bir değer görürse durur ve  devamını dahil etmez.
 
 Verilen değerden sayı ayrıştırılamazsa `NaN` döner
+
 ```
 parseFloat('45asdf')
 //Çıktı: 45
@@ -710,6 +722,7 @@ Verilen string ya da sayı değerini tam sayıya çevirir
 İkinci parametre verilmezse 10 tabanında dönüşüm yapar
 
 Verilen değerden sayı ayrıştırılamazsa `NaN` döner
+
 ```
 parseInt('45asdf')
 //Çıktı: 45
@@ -727,6 +740,7 @@ Sayısal değerin noktadan sonra kaç basamaklı olmasını istiyorsak parametre
 Sayıları yuvarlama yaparak verir.
 
 Sayısal ifadenin noktadan sonrasının uzunluğundan daha büyük bir sayı verilirse sonunu `0` ile doldurur 
+
 ```
 const num = 45.547
 
@@ -742,6 +756,7 @@ num.toFixed(5)
 ---
 ### .toLocaleString()
 Tarih, saat, sayılar,nesneler,dizileri alır ve istenen dilde dizeye dönüştürür.
+
 ```
 const date = new Date()
 date.toLocaleString('tr-TR')
@@ -756,6 +771,7 @@ date.toLocaleString('ar-EG')
 ---
 ### .toPrecision()
 toFixed ile aynı şeyi yapar farkları toPrecision metodunun tam kısmı da dahil etmesidir.
+
 ```
 const num = 45.567
 
@@ -765,6 +781,7 @@ num.toPrecision(3)
 ---
 ### .toString()
 Sayısal değeri string ifadeye dönüştürür.
+
 ```
 const num = 45.567
 
