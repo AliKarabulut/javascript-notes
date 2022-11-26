@@ -788,3 +788,20 @@ const num = 45.567
 num.toString()
 //Çıktı: "45.567"
 ```
+
+## Array Metotları
+
+### .at()
+Dizenin istenen indexteki elemanını dönderir.
+
+Eksi değer verilirse tersten sayar.
+
+```
+const array = [1, 3, 2, 7]
+
+array.at(2)
+//Çıktı: 2
+
+array.at(-3)
+//Çıktı: 3
+```
