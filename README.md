@@ -835,16 +835,36 @@ const numbers = num1.concat(num2, num3)
 ### .copyWithin()
 Dizinin bir bölümünü aynı dizideki başka bir konuma kopyalar ve uzunluğunu değiştirmeden geri döndürür.
 
+!Orjinal dizeyi değiştirir
+
 Syntax => {
 `copyWithin ( hedef )` 
 `copyWithin ( hedef , başlangıç )` 
 `copyWithin ( hedef , başlangıç , bitiş )` 
 }
 ```
-const num1 = [1, 2]
-const num2 = [3, 4]
-const num3 = [5, 6]
+const array = ['a', 'b', 'c', 'd', 'e']
 
-const numbers = num1.concat(num2, num3)
-// [1,2,3,4,5,6]
+array.copyWithin(0, 3, 4)
+// ['d', 'b', 'c', 'd', 'e']
+
+array.copyWithin(1, 3)
+// ['a', 'd', 'e', 'd', 'e']
+```
+---
+### .entries()
+Bir dizinin her bir dizin elemanı için anahtar ve değer çiftlerini içeren yeni bir dizi dönderir.
+
+Syntax => {
+`entries()` 
+}
+```
+const array = ['a', 'b', 'c', 'd', 'e']
+const iterator = array.entries()
+
+iterator.next().value
+// [0, "a"]
+
+iterator.next().value
+// [1, "b"]
 ```
