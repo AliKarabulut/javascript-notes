@@ -66,6 +66,7 @@
   - [findIndex()](#findIndex)
   - [findLast()](#findLast)
   - [findLastIndex()](#findLastIndex)
+  - [flat()](#flat)
 ---
 ## String Metotları
 
@@ -830,9 +831,6 @@ Syntax =>
 `concat ( değer0 , değer1 )`
 `concat ( değer0 , değer1 , + , + değerN )`
 
-
-`
-
 ```
 const num1 = [1, 2]
 const num2 = [3, 4]
@@ -996,4 +994,21 @@ const array = [1, 18, 38, 21, 5]
 
 array.findIndex((sayi) => sayi > 6)
 // 3
+```
+---
+### .flat()
+İç içe dizileri istenen değer kadar ayrıştırarak dışarı çıkarır.
+
+Syntax => {
+`flat()`
+`flat(depth)`
+}
+```
+const array = [1, 18, [38, 21], [[5]]]
+
+array.flat()
+// [1, 18, 38, 21, [5]]
+
+array.flat(2)
+// [1, 18, 38, 21, 5]
 ```
