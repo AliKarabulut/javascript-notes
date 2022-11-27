@@ -63,9 +63,9 @@
 
 
 ### .at()
-Bir tam sayı değeri alır ve stringte karşılık gelen değeri dönderir.
+Bir tam sayı değeri alır ve stringte karşılık gelen değeri döndürür.
 
-Verilen değer bulunamazsa `undefinied` dönderir.
+Verilen değer bulunamazsa `undefinied` döndürür.
 
 ```
 const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
@@ -78,9 +78,9 @@ pangram.at(-5)
 ```
 ---
 ### .charAt()
-0+ değer alır verilen değer string uzunluğundan fazla ise boş string dönderir.
+0+ değer alır verilen değer string uzunluğundan fazla ise boş string döndürür.
 
-Değer verilmezse varsayılan olarak `0` indeksini dönderir.
+Değer verilmezse varsayılan olarak `0` indeksini döndürür.
 
 ```
 const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
@@ -96,7 +96,7 @@ pangram.charat(-5)
 ```
 ---
 ### .charCodeAt()
-Ondalık tabanda karakter kodunu dönderir 
+Ondalık tabanda karakter kodunu döndürür 
 
 `Alt + karakter kodu` ile değeri kullanarak çıktısını alabilirsiniz.
 ```
@@ -111,7 +111,7 @@ pangram.charCodeAt(-8)
 
 ---
 ### .concat()
-Bağımsız stringleri birleştirir ve yeni bir string dönderir
+Bağımsız stringleri birleştirir ve yeni bir string döndürür
 ```
 const string1 = 'Selam '
 const string2 = 'Bebek '
@@ -123,9 +123,9 @@ let sonuc = string1.concat(string2,":)",...list)
 
 ---
 ### .endswith()
-Stringin istenen kelime ya da karakterle bitip bitmediğini kontrol eder `True/False` dönderir.
+Stringin istenen kelime ya da karakterle bitip bitmediğini kontrol eder `True/False` döndürür.
 
-İkinci parametre olarak index değeri alır istenen bitiş verilen indekse karşılık geliyorsa `True` dönderir
+İkinci parametre olarak index değeri alır istenen bitiş verilen indekse karşılık geliyorsa `True` döndürür
 ```
 const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi."
 
@@ -137,7 +137,7 @@ pangram.endswith('vendi.', 44)
 ```
 ---
 ### .includes()
-Stringin içinde istenen değerin var olup olmadığına bakar `True/False` dönderir.
+Stringin içinde istenen değerin var olup olmadığına bakar `True/False` döndürür.
 
 Büyük-küçük harf duyarlıdır 
 
@@ -156,9 +156,9 @@ Stringi 0. indexten itibaren tarar
 
 İki parametre alır ilk parametre istenen değer iken ikinci parametre kaçıncı indeksten itibaren bakılması istendiğidir.
 
-İstenen değer bulunamazsa `-1` dönderir
+İstenen değer bulunamazsa `-1` döndürür
 
-ikinci parametre stringin uzunluğundan fazla ise metot arama yapmadan `-1` dönderir
+ikinci parametre stringin uzunluğundan fazla ise metot arama yapmadan `-1` döndürür
 
 Regular expression kullanımıza izin vermez bunun için search() metodunu kullanmalısınız
 
@@ -180,11 +180,11 @@ Stringi sondan tarayarak istenen değeri arar
 
 İki parametre alır ilk parametre istenen değer iken ikinci parametre kaçıncı indeksten itibaren geriye bakılması istendiğidir.
 
-İstenen değer bulunamazsa `-1` dönderir
+İstenen değer bulunamazsa `-1` döndürür
 
 ikinci parametre <0 ise `0` indeksine bakar
 
-Boş `''` değeri verilirse `stringin uzunluğunu` dönderir
+Boş `''` değeri verilirse `stringin uzunluğunu` döndürür
 
 ```
 const pangram = "Pijamalı hasta yağız şoföre çabucak güvendi. Pijamalı"
@@ -200,7 +200,7 @@ pangram.lastIndexOf('')
 ```
 ---
 ### .length
-Stringin uzunluğunu dönderir
+Stringin uzunluğunu döndürür
 
 Boş string için uzunluk `0`'dır
 
@@ -218,7 +218,7 @@ empty.length
 ### .localeCompare()
 Javascript ASCII karakterleri dışındaki karakterleri sıralamaz ve sona atar. Bunun önüne geçmek için kullanılır
 
-Karşılaştırmada önce sonra ve eşit olma durumuna göre sayı dönderir
+Karşılaştırmada önce sonra ve eşit olma durumuna göre sayı döndürür
 
 Küçük harfler büyüklerden önce gelir
 
@@ -338,7 +338,7 @@ const dosyaYolu = String.raw`C:\Development\profile\aboutme.html`
 ```
 ---
 ### .repeat()
-Stringin belirtilen sayıda kopyasını içeren yeni bir string dönderir yani stringi değiştirmez
+Stringin belirtilen sayıda kopyasını içeren yeni bir string döndürür yani stringi değiştirmez
 
 0-∞ değer alır
 ```
@@ -381,7 +381,7 @@ str.replaceAll('hasta','çocuk')
 ### .search()
 Stringi 0. indexten itibaren tarar
 
-İstenen değer bulunamazsa `-1` dönderir
+İstenen değer bulunamazsa `-1` döndürür
 
 Regular expression kullanımıza izin verir! Bu indexOf() metodundan farkıdır 
 ```
@@ -479,7 +479,7 @@ pangram.substring(-16)
 //Çıktı: Pijamalı hasta yağız şoföre çabucak güvendi.
 ```
 ### .toLocaleLowerCase()
-Stringi küçük harfe dönderir
+Stringi küçük harfe döndürür
 
 İstenirse içine dönüşüm yapılacak dil kodu da girilebilir
 ```
@@ -493,7 +493,7 @@ str.toLocaleLowerCase('tr')
 ```
 ---
 ### .toLocaleUpperCase()
-Stringi büyük harfe dönderir
+Stringi büyük harfe döndürür
 
 İstenirse içine dönüşüm yapılacak dil kodu da girilebilir
 ```
@@ -590,9 +590,9 @@ Number("5a")
 ### Number.isFinite()
 Yapılan sayısal işlemin sonucunun sonlu olup olmadığını kontrol eder
 
-Sonzuz ise `false` dönderir
+Sonzuz ise `false` döndürür
 
-Sonlu ise `true` dönderir
+Sonlu ise `true` döndürür
 
 ```
 const islem1 = 5
@@ -606,7 +606,7 @@ Number.isFinite(islem2)
 ```
 ---
 ### Number.isInteger()
-Yapılan sayısal işlemin sonucunun ya da verilen değerin tam sayı olup olmadığını kontrol eder Sonucunda `true / false` dönderir
+Yapılan sayısal işlemin sonucunun ya da verilen değerin tam sayı olup olmadığını kontrol eder Sonucunda `true / false` döndürür
 
 ```
 const islem = 5/2
@@ -622,11 +622,11 @@ Number.isInteger(5.5)
 ```
 ---
 ### Number.isSafeInteger()
-Sayısal değerin güvenilir olup olmadığını kontrol eder. `true / false` dönderir
+Sayısal değerin güvenilir olup olmadığını kontrol eder. `true / false` döndürür
 
 Javascriptte tam sayılar `-2^53 +1 / 2^53 -1` aralığı güvenilir tamsayı olarak ifade edilir. Bu değerlerin üstündeki bir değeri javascript hesaplarken bir veya daha fazla işlem aynı sonuçları verir.
 
-Noktalı sayılar tam sayı olmadığı için `false` dönderir.
+Noktalı sayılar tam sayı olmadığı için `false` döndürür.
 
 ```
 //
@@ -797,7 +797,7 @@ num.toString()
 ## Array Metotları
 
 ### .at()
-Dizenin istenen indexteki elemanını dönderir.
+Dizenin istenen indexteki elemanını döndürür.
 
 Eksi değer verilirse tersten sayar.
 
@@ -810,10 +810,35 @@ array.at(2)
 array.at(-3)
 // 3
 ```
+---
 ### .concat()
-2 ya da daha fazla array'i birleştirmek için kullanılır.
+2 ya da daha fazla dizeyi birleştirmek için kullanılır.
 
-Orjinal array'i değiştirmez. Yeni bir array dönderir.
+Orjinal dizeyi değiştirmez. Yeni bir array döndürür.
+
+Syntax => 
+`
+
+
+`
+
+```
+const num1 = [1, 2]
+const num2 = [3, 4]
+const num3 = [5, 6]
+
+const numbers = num1.concat(num2, num3)
+// [1,2,3,4,5,6]
+```
+---
+### ..copyWithin()()
+Dizinin bir bölümünü aynı dizideki başka bir konuma kopyalar ve uzunluğunu değiştirmeden geri döndürür.
+
+Syntax => 
+`
+
+
+`
 
 ```
 const num1 = [1, 2]
