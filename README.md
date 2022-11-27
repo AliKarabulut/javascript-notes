@@ -57,6 +57,7 @@
 * [Array Metotları](#Array-Metotları)
   - [at()](#at-1)
   - [concat()](#concat-1)
+  - [copyWithin()](#copyWithin)
 
 ---
 ## String Metotları
@@ -835,15 +836,10 @@ const numbers = num1.concat(num2, num3)
 Dizinin bir bölümünü aynı dizideki başka bir konuma kopyalar ve uzunluğunu değiştirmeden geri döndürür.
 
 Syntax => {
-
-`
-    copyWithin ( hedef )
-
-    copyWithin ( hedef , başlangıç )
-
-    copyWithin ( hedef , başlangıç , bitiş )
-`}
-
+`copyWithin ( hedef )`
+`copyWithin ( hedef , başlangıç )`
+`copyWithin ( hedef , başlangıç , bitiş )`
+}
 ```
 const num1 = [1, 2]
 const num2 = [3, 4]
