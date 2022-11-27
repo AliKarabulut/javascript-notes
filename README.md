@@ -835,11 +835,11 @@ const numbers = num1.concat(num2, num3)
 Dizinin bir bölümünü aynı dizideki başka bir konuma kopyalar ve uzunluğunu değiştirmeden geri döndürür.
 
 Syntax => 
-`   copyWithin ( hedef )
+`copyWithin ( hedef )
 
-    copyWithin ( hedef , başlangıç )  
+    copyWithin ( hedef , başlangıç )
 
-    copyWithin ( hedef , başlangıç , bitiş )  
+    copyWithin ( hedef , başlangıç , bitiş )
 `
 
 ```
