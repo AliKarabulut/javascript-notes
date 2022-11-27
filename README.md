@@ -53,6 +53,11 @@
   - [toLocaleString()](#toLocaleString)
   - [toPrecision()](#toPrecision)
   - [toString()](#toString)
+
+* [Array Metotları](#Array-Metotları)
+  - [at()](#at-1)
+  - [concat()](#concat-1)
+
 ---
 ## String Metotları
 
@@ -800,8 +805,21 @@ Eksi değer verilirse tersten sayar.
 const array = [1, 3, 2, 7]
 
 array.at(2)
-//Çıktı: 2
+// 2
 
 array.at(-3)
-//Çıktı: 3
+// 3
+```
+### .concat()
+2 ya da daha fazla array'i birleştirmek için kullanılır.
+
+Orjinal array'i değiştirmez. Yeni bir array dönderir.
+
+```
+const num1 = [1, 2]
+const num2 = [3, 4]
+const num3 = [5, 6]
+
+const numbers = num1.concat(num2, num3)
+// [1,2,3,4,5,6]
 ```
