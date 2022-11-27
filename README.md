@@ -836,8 +836,9 @@ Dizinin bir bölümünü aynı dizideki başka bir konuma kopyalar ve uzunluğun
 
 Syntax => 
 `
-
-
+copyWithin ( hedef ) 
+copyWithin ( hedef , başlangıç ) 
+copyWithin ( hedef , başlangıç , bitiş )
 `
 
 ```
