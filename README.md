@@ -831,14 +831,14 @@ const numbers = num1.concat(num2, num3)
 // [1,2,3,4,5,6]
 ```
 ---
-### ..copyWithin()()
+### .copyWithin()
 Dizinin bir bölümünü aynı dizideki başka bir konuma kopyalar ve uzunluğunu değiştirmeden geri döndürür.
 
 Syntax => 
 `
-copyWithin ( hedef ) 
-copyWithin ( hedef , başlangıç ) 
-copyWithin ( hedef , başlangıç , bitiş )
+copyWithin ( hedef )  
+copyWithin ( hedef , başlangıç )  
+copyWithin ( hedef , başlangıç , bitiş )  
 `
 
 ```
