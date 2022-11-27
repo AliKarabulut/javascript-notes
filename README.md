@@ -60,6 +60,8 @@
   - [copyWithin()](#copyWithin)
   - [entires()](#entires)
   - [every()](#every)
+  - [fill()](#fill)
+  - [filter()](#filter)
 
 ---
 ## String Metotları
@@ -887,4 +889,30 @@ array.every((sayi) => sayi < 8)
 
 array.every((sayi) => sayi * 2 < 11 )
 // false
+```
+---
+### .fill()
+Dizideki öğeleri başlangıç indeksinden bitiş indeksine kadar istenen değerle değiştirir.
+
+!Orjinal diziyi değiştirir.
+
+Başlangıç değeri negatif ise `dizi uzunluğu + başlangıç değeri`
+Bitiş değeri negatif ise `dizi uzunluğu + bitiş değeri`
+
+Syntax => {
+`fill ( değer )`
+`fill ( değer , başlangıç )`
+`fill ( değer , başlangıç , bitiş )`
+}
+```
+const array = [1, 2, 3, 4]
+
+array.fill(0, 2, 4)
+// [1, 2, 0, 0]
+
+array1.fill(5, 1)
+// [1, 5, 5, 5]
+
+array1.fill(0, -3, -1)
+// [1,0,0,4]
 ```
