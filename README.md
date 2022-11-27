@@ -62,6 +62,7 @@
   - [every()](#every)
   - [fill()](#fill)
   - [filter()](#filter)
+  - [find()](#find)
 
 ---
 ## String Metotları
@@ -860,7 +861,7 @@ array.copyWithin(1, 3)
 ```
 ---
 ### .entries()
-Bir dizinin her bir dizin elemanı için anahtar ve değer çiftlerini içeren yeni bir dizi dönderir.
+Bir dizinin her bir dizin elemanı için anahtar ve değer çiftlerini içeren yeni bir dizi döndürür.
 
 Syntax => {
 `entries()` 
@@ -879,7 +880,7 @@ iterator.next().value
 ### .every()
 Dizideki tüm öğelerin verilen fonksiyon tarafından uygulanan testi geçip geçemediğini test eder
 
-`true / false` dönderir
+`true / false` döndürür
 
 Syntax => {
 `every((element) => {} )`
@@ -921,7 +922,9 @@ array1.fill(0, -3, -1)
 ```
 ---
 ### .filter()
-Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçenleri dönderir
+Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçenleri döndürür.
+
+Hiçbir değer testi geçemezse boş dize döner.
 
 Syntax => {
 `filter( (element)  => {} ) `
@@ -931,4 +934,18 @@ const array = [1, 38, 18, 21, 5]
 
 array.filter((sayi) => sayi > 18)
 // [38, 21]
+```
+### .find()
+Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçen ilk elemanı döndürür.
+
+Hiçbir değer testi geçemezse `undefinied` döndürür.
+
+Syntax => {
+`find( (element)  => {} ) `
+}
+```
+const array = [1, 38, 18, 21, 5]
+
+array.find((sayi) => sayi > 2)
+// 38
 ```
