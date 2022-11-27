@@ -63,6 +63,7 @@
   - [fill()](#fill)
   - [filter()](#filter)
   - [find()](#find)
+  - [findIndex()](#findIndex)
 
 ---
 ## String Metotları
@@ -935,6 +936,7 @@ const array = [1, 38, 18, 21, 5]
 array.filter((sayi) => sayi > 18)
 // [38, 21]
 ```
+---
 ### .find()
 Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçen ilk elemanı döndürür.
 
@@ -948,4 +950,19 @@ const array = [1, 38, 18, 21, 5]
 
 array.find((sayi) => sayi > 2)
 // 38
+```
+---
+### .findIndex()
+Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçen ilk elemanın indeksini döndürür.
+
+Hiçbir değer testi geçemezse `-1` döndürür.
+
+Syntax => {
+`findIndex( (element)  => {} ) `
+}
+```
+const array = [1, 18, 38, 21, 5]
+
+array.findIndex((sayi) => sayi > 30)
+// 2
 ```
