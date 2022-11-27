@@ -64,7 +64,8 @@
   - [filter()](#filter)
   - [find()](#find)
   - [findIndex()](#findIndex)
-
+  - [findLast()](#findLast)
+  - [findLastIndex()](#findLastIndex)
 ---
 ## String Metotları
 
@@ -965,4 +966,34 @@ const array = [1, 18, 38, 21, 5]
 
 array.findIndex((sayi) => sayi > 30)
 // 2
+```
+---
+### .findLast()
+Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçen son elemanın döndürür.
+
+Hiçbir değer testi geçemezse `undefined` döndürür.
+
+Syntax => {
+`findLast( (element)  => {} ) `
+}
+```
+const array = [1, 18, 38, 21, 5]
+
+array.findLast((sayi) => sayi > 6)
+// 21
+```
+---
+### .findLastIndex()
+Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçen son elemanın indeksini döndürür.
+
+Hiçbir değer testi geçemezse `-1` döndürür.
+
+Syntax => {
+`findLastIndex( (element)  => {} ) `
+}
+```
+const array = [1, 18, 38, 21, 5]
+
+array.findIndex((sayi) => sayi > 6)
+// 3
 ```
