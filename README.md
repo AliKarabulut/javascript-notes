@@ -58,6 +58,8 @@
   - [at()](#at-1)
   - [concat()](#concat-1)
   - [copyWithin()](#copyWithin)
+  - [entires()](#entires)
+  - [every()](#every)
 
 ---
 ## String Metotları
@@ -867,4 +869,22 @@ iterator.next().value
 
 iterator.next().value
 // [1, "b"]
+```
+---
+### .every()
+Dizideki tüm öğelerin verilen fonksiyon tarafından uygulanan testi geçip geçemediğini test eder
+
+`true / false` dönderir
+
+Syntax => {
+`every((element) => {} )`
+}
+```
+const array = [1,2,3,4,5,6]
+
+array.every((sayi) => sayi < 8)
+// true
+
+array.every((sayi) => sayi * 2 < 11 )
+// false
 ```
