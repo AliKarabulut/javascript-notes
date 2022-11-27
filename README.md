@@ -822,7 +822,10 @@ array.at(-3)
 Orjinal dizeyi değiştirmez. Yeni bir array döndürür.
 
 Syntax => 
-`
+`concat ( )`
+`concat ( değer0 )`
+`concat ( değer0 , değer1 )`
+`concat ( değer0 , değer1 , + , + değerN )`
 
 
 `
@@ -915,4 +918,17 @@ array1.fill(5, 1)
 
 array1.fill(0, -3, -1)
 // [1,0,0,4]
+```
+---
+### .filter()
+Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçenleri dönderir
+
+Syntax => {
+`filter( (element)  => {} ) `
+}
+```
+const array = [1, 38, 18, 21, 5]
+
+array.filter((sayi) => sayi > 18)
+// [38, 21]
 ```
