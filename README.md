@@ -67,6 +67,7 @@
   - [findLast()](#findLast)
   - [findLastIndex()](#findLastIndex)
   - [flat()](#flat)
+  - [flatMap()](#flatMap)
 ---
 ## String Metotları
 
@@ -1011,4 +1012,20 @@ array.flat()
 
 array.flat(2)
 // [1, 18, 38, 21, 5]
+```
+---
+### .flatMap()
+Yeni bir array dönderir flat() metoduna 1 verilmesi ile aynıdır.
+
+Her bir elemanı .map() metodu gibi teker teker döner.
+
+Syntax => {
+`flatMap( (Mevcut değer)  => {} )`
+
+}
+```
+const array=['aa bb', '45 65']
+
+.flatMap(el => el.split(' '))
+// ["aa", "bb", "45", "65"]
 ```
