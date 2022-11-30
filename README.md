@@ -68,6 +68,7 @@
   - [findLastIndex()](#findLastIndex)
   - [flat()](#flat)
   - [flatMap()](#flatMap)
+  - [forEach()](#forEach)
 ---
 ## String Metotları
 
@@ -1028,4 +1029,20 @@ const array=['aa bb', '45 65']
 
 .flatMap(el => el.split(' '))
 // ["aa", "bb", "45", "65"]
+```
+---
+### .forEach()
+Her dizi öğesi için verilen fonksiyonu bir kez yürütür.
+
+Syntax => {
+`forEach( (Mevcut değer)  => {} )`
+
+}
+```
+const array=[1,2,3,4]
+
+.forEach(num => console.log(num))
+// 1
+// 2
+// 3
 ```
