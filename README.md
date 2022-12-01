@@ -1046,3 +1046,26 @@ const array=[1,2,3,4]
 // 2
 // 3
 ```
+---
+### .includes()
+Bir dizenin elemanları arasında istenen değerin olup olmadığını kontrol eder.
+
+`true / false` döndürür
+
+Syntax => {
+`includes(aranan eleman)`
+`includes(aranan eleman, başlangıç indeksi)`
+
+}
+```
+const array=["selam","kedi","ayı"]
+
+.includes("selam")
+// true
+
+.includes("kedi",2)
+// false
+
+.includes("ke")
+// false
+```
