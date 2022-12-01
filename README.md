@@ -73,8 +73,8 @@
   - [indexOf()](#indexOf)
   - [Array.isArray()](#ArrayisArray)
   - [join()](#join)
-  - [lastIndexOf()](#lastIndexOf)
-  - [length()](#length)
+  - [lastIndexOf()](#lastindexof-1)
+  - [length()](#length-1)
 ---
 ## String Metotları
 
@@ -1159,4 +1159,17 @@ const array=["selam","kedi","ayı","selam"]
 
 .lastIndexOf("selam",2)
 // 0
+```
+---
+### .length()
+Dizenin kaç eleman olduğunu döndürür.
+
+Syntax => {
+`length()`
+}
+```
+const array=["selam","kedi","ayı","selam"]
+
+.length()
+// 4
 ```
