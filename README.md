@@ -80,6 +80,8 @@
   - [Array.of()](#Arrayof)
   - [pop()](#pop)
   - [push()](#push)
+  - [reverse()](#reverse)
+  - [shift()](#shift)
 ---
 ## String Metotları
 
@@ -1268,4 +1270,19 @@ const array = ["Bir", "İki", "Üç"]
 
 array.reverse()
 // ["Üç", "İki", "Bir"]
+```
+---
+### .shift()
+Dizenin ilk elemanını dizeden atar.
+
+Diziden atılan elemanı döndürür.
+
+Syntax => {
+`shift()`
+}
+```
+const array = ["Bir", "İki", "Üç"]
+
+array.shift()
+// "Bir"
 ```
