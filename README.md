@@ -69,6 +69,10 @@
   - [flat()](#flat)
   - [flatMap()](#flatMap)
   - [forEach()](#forEach)
+  - [includes()](#includes)
+  - [indexOf()](#indexOf)
+  - [Array.isArray()](#ArrayisArray)
+  - [join()](#join)
 ---
 ## String Metotları
 
