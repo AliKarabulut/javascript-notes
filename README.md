@@ -1069,3 +1069,47 @@ const array=["selam","kedi","ayı"]
 .includes("ke")
 // false
 ```
+---
+### .indexOf()
+Bir dizenin elemanları arasında istenen değerin hangi indekste olduğunu kontrol eder
+
+bulamazsa `-1` döndürür
+
+Syntax => {
+`indexOf(aranan eleman)`
+`indexOf(aranan eleman, başlangıç indeksi)`
+
+}
+```
+const array=["selam","kedi","ayı","selam"]
+
+.indexOf("selam")
+// 0
+
+.indexOf("kedi",2)
+// -1
+
+.indexOf("selam",2)
+// 3
+```
+---
+### Array.isArray()
+Verilen değerin dizi olup olmadığını kontrol eder.
+
+Syntax => {
+`Array.isArray(değer)`
+}
+```
+Array.isArray([1])
+// true
+
+Array.isArray(new Array('a', 'b', 'c', 'd'))
+// true
+
+
+Array.isArray(undefined)
+// false
+
+Array.isArray(17)
+// false
+```
