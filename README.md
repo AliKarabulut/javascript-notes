@@ -79,6 +79,7 @@
   - [map()](#map)
   - [Array.of()](#Arrayof)
   - [pop()](#pop)
+  - [push()](#push)
 ---
 ## String Metotları
 
@@ -1239,4 +1240,18 @@ const array = ["Elma", "Armut", "Vişne", "Limon", "Kayısı"]
 
 plants.pop()
 // Kayısı
+```
+---
+### .push()
+Dizenin sonuna verilen eleman/elemanları ekler
+
+Syntax => {
+`push(eleman)`
+`push(eleman, ..., elemanN)`
+}
+```
+const array = ["Elma", "Armut", "Vişne"]
+
+array.push("Limon", Erik)
+// ["Elma", "Armut", "Vişne", "Limon", "Erik"]
 ```
