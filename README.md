@@ -1255,3 +1255,17 @@ const array = ["Elma", "Armut", "Vişne"]
 array.push("Limon", Erik)
 // ["Elma", "Armut", "Vişne", "Limon", "Erik"]
 ```
+---
+### .reverse()
+Dizeyi ters çevirir
+
+Syntax => {
+`reverse()`
+
+}
+```
+const array = ["Bir", "İki", "Üç"]
+
+array.reverse()
+// ["Üç", "İki", "Bir"]
+```
