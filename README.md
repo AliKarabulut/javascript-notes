@@ -55,6 +55,7 @@
   - [toString()](#toString)
 
 * [Array Metotları](#Array-Metotları)
+  - [Array()](#Array)
   - [at()](#at-1)
   - [concat()](#concat-1)
   - [copyWithin()](#copyWithin)
@@ -815,6 +816,20 @@ num.toString()
 
 ## Array Metotları
 
+### Array()
+`0 >=` tek bir sayı verilirse verilen sayı kadar elemanı olan ve elemanları undefinied olan bir dize döndürür.
+
+Verilen elemanlarla yeni bir dize oluşturur.
+
+```
+const array = Array(3)
+// [undefined, undefined, undefined]
+
+const array = Array(1,2,3)
+// [1,2,3]
+```
+
+---
 ### .at()
 Dizenin istenen indexteki elemanını döndürür.
 
