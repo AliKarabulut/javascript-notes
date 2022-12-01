@@ -76,6 +76,7 @@
   - [lastIndexOf()](#lastindexof-1)
   - [length()](#length-1)
   - [map()](#map)
+  - [Array.of()](#Arrayof)
 ---
 ## String Metotları
 
@@ -1184,8 +1185,26 @@ Syntax => {
 `map( (element)  =>  {} ) `
 }
 ```
-const array = [1, 2, 3, 4, 5;
+const array = [1, 2, 3, 4, 5]
 
 .map( x => x**2)
 // [1, 4, 9, 16, 25]
+```
+---
+### Array.of()
+Verilen argümanlarla yeni bir dize oluşturur.
+
+Array metodu ile farkı:
+
+Array(7) => 7 elemanlı bir dizi oluşturur
+
+Array.of(7) => Tek elemanlı ve elemanı 7 olan bir dize oluşturur
+
+Syntax => {
+`Array.of(eleman)`
+`Array.of(eleman1, eleman2,...,elemanN)`
+}
+```
+Array.of(1, 2, 3)
+// [1, 2, 3]
 ```
