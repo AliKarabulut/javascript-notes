@@ -1113,3 +1113,22 @@ Array.isArray(undefined)
 Array.isArray(17)
 // false
 ```
+---
+### .join()
+Verilen bir dizinin elemanları arasına verilen değeri koyarak birleştirip stringe dönüştürür.
+
+Default değeri `,`'dür
+
+Syntax => {
+`join()`
+`join(ayırıcı değer)`
+}
+```
+const array = ['Selam', 'dünyalı', 'nasılsın' '?']
+
+join()
+// "Selam,dünyalı,nasılsın,?"
+
+join('')
+// "Selamdünyalınasılsın?"
+```
