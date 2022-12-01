@@ -75,6 +75,7 @@
   - [join()](#join)
   - [lastIndexOf()](#lastindexof-1)
   - [length()](#length-1)
+  - [map()](#map)
 ---
 ## String Metotları
 
@@ -1172,4 +1173,19 @@ const array=["selam","kedi","ayı","selam"]
 
 .length()
 // 4
+```
+---
+### .map()
+Dizideki her elemanı teker teker gezer ve verilen işlevden geçirir.
+
+Yeni bir dize oluşturur ve işlevden geçen elemanları içine yerleştirir
+
+Syntax => {
+`map( (element)  =>  {} ) `
+}
+```
+const array = [1, 2, 3, 4, 5;
+
+.map( x => x**2)
+// [1, 4, 9, 16, 25]
 ```
