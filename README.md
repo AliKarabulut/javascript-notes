@@ -73,6 +73,8 @@
   - [indexOf()](#indexOf)
   - [Array.isArray()](#ArrayisArray)
   - [join()](#join)
+  - [lastIndexOf()](#lastIndexOf)
+  - [length()](#length)
 ---
 ## String Metotları
 
@@ -1075,13 +1077,13 @@ const array=["selam","kedi","ayı"]
 ```
 ---
 ### .indexOf()
-Bir dizenin elemanları arasında istenen değerin hangi indekste olduğunu kontrol eder
+Bir dizenin elemanları arasında istenen değerin hangi indekste olduğunu arar ve döndürür.
 
-bulamazsa `-1` döndürür
+Bulamazsa `-1` döndürür
 
 Syntax => {
 `indexOf(aranan eleman)`
-`indexOf(aranan eleman, başlangıç indeksi)`
+`indexOf(aranan eleman, başlama indeksi)`
 
 }
 ```
@@ -1135,4 +1137,26 @@ join()
 
 join('')
 // "Selamdünyalınasılsın?"
+```
+---
+### .lastIndexOf()
+Dizinin son elemanından başlayarak istenen elemanı arar ve indeks numarasını döndürür
+
+Bulamazsa `-1` döndürür
+
+Syntax => {
+`lastIndexOf(aranan eleman)`
+`lastIndexOf(aranan eleman, başlama indeksi)`
+}
+```
+const array=["selam","kedi","ayı","selam"]
+
+.lastIndexOf("selam")
+// 3
+
+.lastIndexOf("Aslan")
+// -1
+
+.lastIndexOf("selam",2)
+// 0
 ```
