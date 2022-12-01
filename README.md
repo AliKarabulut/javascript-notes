@@ -78,6 +78,7 @@
   - [length()](#length-1)
   - [map()](#map)
   - [Array.of()](#Arrayof)
+  - [pop()](#pop)
 ---
 ## String Metotları
 
@@ -1222,4 +1223,20 @@ Syntax => {
 ```
 Array.of(1, 2, 3)
 // [1, 2, 3]
+```
+---
+### .pop()
+Dizinin son elemanını diziden atar
+
+Diziden atılan elemanı döndürür.
+
+Syntax => {
+`pop()`
+
+}
+```
+const array = ["Elma", "Armut", "Vişne", "Limon", "Kayısı"]
+
+plants.pop()
+// Kayısı
 ```
