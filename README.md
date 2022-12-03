@@ -85,6 +85,7 @@
   - [slice()](#slice)
   - [some()](#some)
   - [sort()](#sort)
+  - [splice()](#splice)
 ---
 ## String Metotları
 
@@ -1327,7 +1328,7 @@ Syntax => {
 ```
 const array = [1, 2, 3, 4, 5]
 
-.some((element) => element % 2 === 0)
+array.some((element) => element % 2 === 0)
 // true
 ```
 ---
@@ -1343,9 +1344,31 @@ Syntax => {
 ```
 const array = [11, 20, 9, 10, 1, 2]
 
-.sort()
+array.sort()
 // [1, 10, 11, 2, 20, 9]
 
-.sort((a,b) => {return a-b})
+array.sort((a,b) => {return a-b})
 // [1, 2, 9, 10, 11, 20]
+```
+---
+### .splice()
+Dizenin mevcut öğelerini kaldırarak veya değiştirerek ve/veya yerine yeni öğeler ekleyerek dizenin içeriğini değiştirir.
+
+`'SS' => başlangıç değerinden itibaren kaç öğenin silineceğidir.`
+Syntax => {
+`splice(başlangıç)`
+`splice(başlangıç, SS)`
+`splice(başlangıç, SS, eklenecek/ler)`
+}
+```
+const array = [1, 2, 3, 4, 5, 6, 7]
+
+array.splice(1)
+// [1]
+
+array.splice(1,0,99)
+// [1, 99, 2, 3, 4, 5, 6, 7]
+
+array.splice(1,4,99)
+// Array [1, 99, 6, 7]
 ```
