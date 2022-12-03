@@ -84,6 +84,7 @@
   - [shift()](#shift)
   - [slice()](#slice)
   - [some()](#some)
+  - [sort()](#sort)
 ---
 ## String Metotları
 
@@ -1328,4 +1329,23 @@ const array = [1, 2, 3, 4, 5]
 
 .some((element) => element % 2 === 0)
 // true
+```
+---
+### .sort()
+Dizideki elemanları `alfabetik` olarak sıralar.
+
+Sayısal karşılaştırma için karşılaştırma fonksiyonu yazılmalıdır
+
+Syntax => {
+`sort()`
+`sort( (a,b) => {} )`
+}
+```
+const array = [11, 20, 9, 10, 1, 2]
+
+.sort()
+// [1, 10, 11, 2, 20, 9]
+
+.sort((a,b) => {return a-b})
+// [1, 2, 9, 10, 11, 20]
 ```
