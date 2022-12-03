@@ -1341,7 +1341,9 @@ Dizideki elemanları `alfabetik` olarak sıralar.
 Sayısal karşılaştırma için karşılaştırma fonksiyonu yazılmalıdır
 
 Syntax => {
+
 `sort()`
+
 `sort( (a,b) => {} )`
 }
 ```
@@ -1358,6 +1360,7 @@ array.sort((a,b) => {return a-b})
 Dizenin mevcut öğelerini kaldırarak veya değiştirerek ve/veya yerine yeni öğeler ekleyerek dizenin içeriğini değiştirir.
 
 `'SS' => başlangıç değerinden itibaren kaç öğenin silineceğidir.`
+
 Syntax => {
 `splice(başlangıç)`
 `splice(başlangıç, SS)`
