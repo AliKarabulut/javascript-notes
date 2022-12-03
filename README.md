@@ -82,6 +82,7 @@
   - [push()](#push)
   - [reverse()](#reverse)
   - [shift()](#shift)
+  - [slice()](#slice)
 ---
 ## String Metotları
 
@@ -1285,4 +1286,29 @@ const array = ["Bir", "İki", "Üç"]
 
 array.shift()
 // "Bir"
+```
+---
+### .slice()
+Dizinin istenen aralıktaki değerlerini döndürür.
+
+Bitiş noktası dahil değildir.
+
+Eksi değer verilirse dizenin sonundan başlar.
+
+Syntax => {
+`slice()`
+`slice(start)`
+`slice(start, end)`
+}
+```
+const array = ["Bir", "İki", "Üç","Dört","Beş","Altı"]
+
+array.slice(3)
+// ["Dört", "Beş", "Altı"]
+
+array.slice(2,4)
+// ["Üç", "Dört"]
+
+array.slice(2,-1)
+// ["Üç", "Dört", "Beş"]
 ```
