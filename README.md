@@ -1342,7 +1342,7 @@ Sayısal karşılaştırma için karşılaştırma fonksiyonu yazılmalıdır
 
 Syntax => {
 
-  `sort()`
+    `sort()`
 
     `sort( (a,b) => {} )`
 }
