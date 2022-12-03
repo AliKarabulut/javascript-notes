@@ -1362,6 +1362,7 @@ Dizenin mevcut öğelerini kaldırarak veya değiştirerek ve/veya yerine yeni �
 `'SS' => başlangıç değerinden itibaren kaç öğenin silineceğidir.`
 
 Syntax => {
+
     splice(başlangıç)
     splice(başlangıç, SS)
     splice(başlangıç, SS, eklenecek/ler)
@@ -1405,7 +1406,9 @@ array.toString()
 Bir dizinin başına bir veya daha fazla öğe ekler ve dizinin yeni uzunluğunu döndürür.
 
 Syntax => {
+
     unshift(element0)
+    
     unshift(element0, … , elementN)
 }
 ```
