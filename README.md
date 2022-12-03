@@ -862,12 +862,12 @@ array.at(-3)
 Orjinal dizeyi değiştirmez. Yeni bir array döndürür.
 
 Syntax => {
-  
+
     concat ( )
     concat ( değer0 )
     concat ( değer0 , değer1 )
     concat ( değer0 , değer1 , + , + değerN )
-    }
+  }
 
 
 ```
