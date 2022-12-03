@@ -1342,9 +1342,9 @@ Sayısal karşılaştırma için karşılaştırma fonksiyonu yazılmalıdır
 
 Syntax => {
 
-`sort()`
+  `sort()`
 
-`sort( (a,b) => {} )`
+    `sort( (a,b) => {} )`
 }
 ```
 const array = [11, 20, 9, 10, 1, 2]
