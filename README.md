@@ -86,6 +86,10 @@
   - [some()](#some)
   - [sort()](#sort)
   - [splice()](#splice)
+  - [toLocaleString()](#tolocalestring-1)
+  - [toString()](#tostring-2)
+  - [unshift()](#unshift)
+  - [values()](#values)
 ---
 ## String Metotları
 
@@ -788,7 +792,7 @@ num.toFixed(5)
 ```
 ---
 ### .toLocaleString()
-Tarih, saat, sayılar,nesneler,dizileri alır ve istenen dilde dizeye dönüştürür.
+Tarih, saat, sayılar,nesneler,diziler alır ve istenen dilde dizeye dönüştürür.
 
 ```
 const date = new Date()
@@ -1371,4 +1375,15 @@ array.splice(1,0,99)
 
 array.splice(1,4,99)
 // Array [1, 99, 6, 7]
+```
+---
+### .toLocaleString()
+Number metotlarında gösterilmiştir.
+
+=> [toLocaleString()](#toLocaleString)
+```
+const array = [1,2,3]
+
+array.toLocaleString('ar-EG')
+// "١,٢,٣"
 ```
