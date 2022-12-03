@@ -83,6 +83,7 @@
   - [reverse()](#reverse)
   - [shift()](#shift)
   - [slice()](#slice)
+  - [some()](#some)
 ---
 ## String Metotları
 
@@ -1311,4 +1312,20 @@ array.slice(2,4)
 
 array.slice(2,-1)
 // ["Üç", "Dört", "Beş"]
+```
+---
+### .some()
+Dizideki en az bir elemanın sağlanan fonksiyon tarafından uygulanan testi geçip geçemediğini kontrol eder.
+
+`true / false` döndürür
+
+Syntax => {
+`some( (mevcut değer) => {} )`
+
+}
+```
+const array = [1, 2, 3, 4, 5]
+
+.some((element) => element % 2 === 0)
+// true
 ```
