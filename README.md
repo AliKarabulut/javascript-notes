@@ -89,7 +89,6 @@
   - [toLocaleString()](#tolocalestring-1)
   - [toString()](#tostring-2)
   - [unshift()](#unshift)
-  - [values()](#values)
 ---
 ## String Metotları
 
@@ -1401,6 +1400,11 @@ array.toString()
 ---
 ### .unshift()
 Bir dizinin başına bir veya daha fazla öğe ekler ve dizinin yeni uzunluğunu döndürür.
+
+Syntax => {
+`unshift(element0)`
+`unshift(element0, … , elementN)`
+}
 ```
 const array = [1, 2, 3]
 
