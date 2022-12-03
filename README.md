@@ -861,11 +861,13 @@ array.at(-3)
 
 Orjinal dizeyi değiştirmez. Yeni bir array döndürür.
 
-Syntax => 
-`concat ( )`
-`concat ( değer0 )`
-`concat ( değer0 , değer1 )`
-`concat ( değer0 , değer1 , + , + değerN )`
+Syntax => {
+    concat ( )
+    concat ( değer0 )
+    concat ( değer0 , değer1 )
+    concat ( değer0 , değer1 , + , + değerN )
+    }
+
 
 ```
 const num1 = [1, 2]
@@ -882,9 +884,9 @@ Dizinin bir bölümünü aynı dizideki başka bir konuma kopyalar ve uzunluğun
 !Orjinal dizeyi değiştirir
 
 Syntax => {
-`copyWithin ( hedef )` 
-`copyWithin ( hedef , başlangıç )` 
-`copyWithin ( hedef , başlangıç , bitiş )` 
+    copyWithin ( hedef )
+    copyWithin ( hedef , başlangıç )
+    copyWithin ( hedef , başlangıç , bitiş )
 }
 ```
 const array = ['a', 'b', 'c', 'd', 'e']
@@ -900,7 +902,8 @@ array.copyWithin(1, 3)
 Bir dizinin her bir dizin elemanı için anahtar ve değer çiftlerini içeren yeni bir dizi döndürür.
 
 Syntax => {
-`entries()` 
+
+    entries()
 }
 ```
 const array = ['a', 'b', 'c', 'd', 'e']
@@ -919,7 +922,8 @@ Dizideki tüm öğelerin verilen fonksiyon tarafından uygulanan testi geçip ge
 `true / false` döndürür
 
 Syntax => {
-`every((element) => {} )`
+
+    every((element) => {} )
 }
 ```
 const array = [1,2,3,4,5,6]
@@ -940,9 +944,10 @@ Başlangıç değeri negatif ise `dizi uzunluğu + başlangıç değeri`
 Bitiş değeri negatif ise `dizi uzunluğu + bitiş değeri`
 
 Syntax => {
-`fill ( değer )`
-`fill ( değer , başlangıç )`
-`fill ( değer , başlangıç , bitiş )`
+
+    fill ( değer )
+    fill ( değer , başlangıç )
+   fill ( değer , başlangıç , bitiş )
 }
 ```
 const array = [1, 2, 3, 4]
@@ -963,7 +968,8 @@ Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçenleri dö
 Hiçbir değer testi geçemezse boş dize döner.
 
 Syntax => {
-`filter( (element)  => {} ) `
+
+    filter( (element)  => {} ) 
 }
 ```
 const array = [1, 38, 18, 21, 5]
@@ -978,7 +984,8 @@ Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçen ilk ele
 Hiçbir değer testi geçemezse `undefinied` döndürür.
 
 Syntax => {
-`find( (element)  => {} ) `
+
+  find( (element)  => {} ) 
 }
 ```
 const array = [1, 38, 18, 21, 5]
@@ -993,7 +1000,8 @@ Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçen ilk ele
 Hiçbir değer testi geçemezse `-1` döndürür.
 
 Syntax => {
-`findIndex( (element)  => {} ) `
+
+    findIndex( (element)  => {} ) 
 }
 ```
 const array = [1, 18, 38, 21, 5]
@@ -1008,7 +1016,8 @@ Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçen son ele
 Hiçbir değer testi geçemezse `undefined` döndürür.
 
 Syntax => {
-`findLast( (element)  => {} ) `
+
+    findLast( (element)  => {} ) 
 }
 ```
 const array = [1, 18, 38, 21, 5]
@@ -1023,7 +1032,8 @@ Diziyi istenen fonksiyondan tarafından teste tabi tutar ve testi geçen son ele
 Hiçbir değer testi geçemezse `-1` döndürür.
 
 Syntax => {
-`findLastIndex( (element)  => {} ) `
+
+    findLastIndex( (element)  => {} ) 
 }
 ```
 const array = [1, 18, 38, 21, 5]
@@ -1036,8 +1046,9 @@ array.findIndex((sayi) => sayi > 6)
 İç içe dizileri istenen değer kadar ayrıştırarak dışarı çıkarır.
 
 Syntax => {
-`flat()`
-`flat(depth)`
+
+    flat()
+    flat(depth)
 }
 ```
 const array = [1, 18, [38, 21], [[5]]]
@@ -1055,7 +1066,8 @@ Yeni bir array dönderir flat() metoduna 1 verilmesi ile aynıdır.
 Her bir elemanı .map() metodu gibi teker teker döner.
 
 Syntax => {
-`flatMap( (Mevcut değer)  => {} )`
+
+    flatMap( (Mevcut değer)  => {} )
 
 }
 ```
@@ -1069,7 +1081,8 @@ const array=['aa bb', '45 65']
 Her dizi öğesi için verilen fonksiyonu bir kez yürütür.
 
 Syntax => {
-`forEach( (Mevcut değer)  => {} )`
+
+    forEach( (Mevcut değer)  => {} )
 
 }
 ```
@@ -1087,8 +1100,9 @@ Bir dizenin elemanları arasında istenen değerin olup olmadığını kontrol e
 `true / false` döndürür
 
 Syntax => {
-`includes(aranan eleman)`
-`includes(aranan eleman, başlangıç indeksi)`
+
+    includes(aranan eleman)
+    includes(aranan eleman, başlangıç indeksi)
 
 }
 ```
@@ -1110,8 +1124,9 @@ Bir dizenin elemanları arasında istenen değerin hangi indekste olduğunu arar
 Bulamazsa `-1` döndürür
 
 Syntax => {
-`indexOf(aranan eleman)`
-`indexOf(aranan eleman, başlama indeksi)`
+
+    indexOf(aranan eleman)`
+    indexOf(aranan eleman, başlama indeksi)`
 
 }
 ```
@@ -1131,7 +1146,8 @@ const array=["selam","kedi","ayı","selam"]
 Verilen değerin dizi olup olmadığını kontrol eder.
 
 Syntax => {
-`Array.isArray(değer)`
+
+    Array.isArray(değer)
 }
 ```
 Array.isArray([1])
@@ -1154,8 +1170,9 @@ Verilen bir dizinin elemanları arasına verilen değeri koyarak birleştirip st
 Default değeri `,`'dür
 
 Syntax => {
-`join()`
-`join(ayırıcı değer)`
+
+    join()
+    join(ayırıcı değer)
 }
 ```
 const array = ['Selam', 'dünyalı', 'nasılsın' '?']
@@ -1173,8 +1190,9 @@ Dizinin son elemanından başlayarak istenen elemanı arar ve indeks numarasın�
 Bulamazsa `-1` döndürür
 
 Syntax => {
-`lastIndexOf(aranan eleman)`
-`lastIndexOf(aranan eleman, başlama indeksi)`
+
+    lastIndexOf(aranan eleman)
+    lastIndexOf(aranan eleman, başlama indeksi)
 }
 ```
 const array=["selam","kedi","ayı","selam"]
@@ -1193,7 +1211,8 @@ const array=["selam","kedi","ayı","selam"]
 Dizenin kaç eleman olduğunu döndürür.
 
 Syntax => {
-`length()`
+
+    length()
 }
 ```
 const array=["selam","kedi","ayı","selam"]
@@ -1208,7 +1227,8 @@ Dizideki her elemanı teker teker gezer ve verilen işlevden geçirir.
 Yeni bir dize oluşturur ve işlevden geçen elemanları içine yerleştirir
 
 Syntax => {
-`map( (element)  =>  {} ) `
+
+    map( (element)  =>  {} ) 
 }
 ```
 const array = [1, 2, 3, 4, 5]
@@ -1227,8 +1247,9 @@ Array(7) => 7 elemanlı bir dizi oluşturur
 Array.of(7) => Tek elemanlı ve elemanı 7 olan bir dize oluşturur
 
 Syntax => {
-`Array.of(eleman)`
-`Array.of(eleman1, eleman2,...,elemanN)`
+
+    Array.of(eleman)
+    Array.of(eleman1, eleman2,...,elemanN)
 }
 ```
 Array.of(1, 2, 3)
@@ -1241,7 +1262,8 @@ Dizinin son elemanını diziden atar
 Diziden atılan elemanı döndürür.
 
 Syntax => {
-`pop()`
+
+    pop()
 
 }
 ```
@@ -1255,8 +1277,8 @@ plants.pop()
 Dizenin sonuna verilen eleman/elemanları ekler
 
 Syntax => {
-`push(eleman)`
-`push(eleman, ..., elemanN)`
+    push(eleman)
+    push(eleman, ..., elemanN)
 }
 ```
 const array = ["Elma", "Armut", "Vişne"]
@@ -1269,7 +1291,8 @@ array.push("Limon", Erik)
 Dizeyi ters çevirir
 
 Syntax => {
-`reverse()`
+
+    reverse()
 
 }
 ```
@@ -1285,7 +1308,8 @@ Dizenin ilk elemanını dizeden atar.
 Diziden atılan elemanı döndürür.
 
 Syntax => {
-`shift()`
+
+    shift()
 }
 ```
 const array = ["Bir", "İki", "Üç"]
@@ -1302,9 +1326,10 @@ Bitiş noktası dahil değildir.
 Eksi değer verilirse dizenin sonundan başlar.
 
 Syntax => {
-`slice()`
-`slice(start)`
-`slice(start, end)`
+
+    slice()
+    slice(start)
+    slice(start, end)
 }
 ```
 const array = ["Bir", "İki", "Üç","Dört","Beş","Altı"]
@@ -1343,7 +1368,6 @@ Sayısal karşılaştırma için karşılaştırma fonksiyonu yazılmalıdır
 Syntax => {
 
     sort()
-
     sort( (a,b) => {} )
 }
 ```
@@ -1408,7 +1432,6 @@ Bir dizinin başına bir veya daha fazla öğe ekler ve dizinin yeni uzunluğunu
 Syntax => {
 
     unshift(element0)
-    
     unshift(element0, … , elementN)
 }
 ```
