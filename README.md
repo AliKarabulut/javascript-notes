@@ -1398,3 +1398,15 @@ const array = [1, 2, 'a', '1a',true]
 array.toString()
 // "1,2,a,1a,true"
 ```
+---
+### .unshift()
+Bir dizinin başına bir veya daha fazla öğe ekler ve dizinin yeni uzunluğunu döndürür.
+```
+const array = [1, 2, 3]
+
+array.unshift(4,5,"a")
+// 6
+
+Dizinin yeni hali
+// array => [4, 5, "a", 1, 2, 3]
+```
