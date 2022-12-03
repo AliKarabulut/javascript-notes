@@ -1387,3 +1387,14 @@ const array = [1,2,3]
 array.toLocaleString('ar-EG')
 // "١,٢,٣"
 ```
+---
+### .toString()
+String metotlarında gösterilmiştir.
+
+=> [toString()](#toString)
+```
+const array = [1, 2, 'a', '1a',true]
+
+array.toString()
+// "1,2,a,1a,true"
+```
