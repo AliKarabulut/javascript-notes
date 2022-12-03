@@ -862,6 +862,7 @@ array.at(-3)
 Orjinal dizeyi değiştirmez. Yeni bir array döndürür.
 
 Syntax => {
+  
     concat ( )
     concat ( değer0 )
     concat ( değer0 , değer1 )
@@ -884,6 +885,7 @@ Dizinin bir bölümünü aynı dizideki başka bir konuma kopyalar ve uzunluğun
 !Orjinal dizeyi değiştirir
 
 Syntax => {
+
     copyWithin ( hedef )
     copyWithin ( hedef , başlangıç )
     copyWithin ( hedef , başlangıç , bitiş )
